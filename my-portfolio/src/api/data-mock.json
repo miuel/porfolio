@@ -1,0 +1,81 @@
+{
+  "marqueeTxt": [
+    {
+      "text": "welcome"
+    },
+    {
+      "text": "Miguel's Portfolio Site"
+    },
+    {
+      "text": "Technology and aesthetics, hand in hand"
+    },
+    {
+      "text": "Front-End Developer"
+    },
+    {
+      "text": "Innovating the present, shaping the future"
+    },
+    {
+      "text": "Keep it simple, make it stand out"
+    }
+  ],
+  "slogan": "Creating beautiful experiences, one pixel at a time",
+  "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design.",
+  "aboutMe": [
+    {
+      "title": "About",
+      "text": "Miguel Rivas is a talented frontend developer with a deep love of art and design. Born in Argentina, Miguel now calls Sweden home, where he lives with his family. Though far from his roots, Miguel's passion for creating beautiful and functional websites and applications remains unwavering. With a keen eye for detail and a love of all things tech, Miguel is always seeking new ways to improve his skills and push the boundaries of what is possible with code. In his free time, he enjoys exploring the latest design trends and indulging his curiosity about the art world, finding inspiration in the beauty and poetry of his surroundings"
+    }
+  ],
+  "skills": {
+    "title": "Experience",
+    "jobs": [
+      {
+        "name": "Front-End",
+        "company": "Consid AB",
+        "place": "Sweden",
+        "date": "Dec 2021 - ongoing",
+        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "description": "Management and further development of the existing website as well as a project to develop and build a new component library. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+      },
+      {
+        "name": "Front-End",
+        "company": "HejAlbert",
+        "place": "Sweden",
+        "date": "Oct 2021 - Dec 2021",
+        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "description": "Development of a new website for a Swedish startup. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+      },
+      {
+        "name": "Front-End",
+        "company": "Consid AB",
+        "place": "Sweden",
+        "date": "Aug 2021 - Oct 2021",
+        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "description": "Development of a new website for a Swedish startup. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+      },
+      {
+        "name": "Front-End",
+        "company": "Consid AB",
+        "place": "Sweden",
+        "date": "Jun 2021 - Aug 2021",
+        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "description": ""
+      }
+    ]
+  },
+  "footerData": [
+    {
+      "title": "info",
+      "data": "Miguel Rivas Frontend Developer Halmstad, Sweden"
+    },
+    {
+      "title": "contact",
+      "data": "rivasmig@gmail.com +46 072 44 37587"
+    },
+    {
+      "title": "social",
+      "data": "linkedin.com/in/miguelrivasin/ github.com/miuel"
+    }
+  ]
+}
