@@ -11,11 +11,11 @@ const AboutPage = () => {
               <div className="w-1/3" >
                 <h1>{about.title}</h1>
 
-                <img
-                  src="../assets/images/logo.png"
-                  width={160}
-                  className="mt-4  transform hover:rotate-360 hover:scale-95 transition duration-500 ease-in-out "
-                />
+                <div className="icon">
+                  <img
+                    src="../assets/images/logo.png" />
+                </div>
+
               </div>
               <div className="w-2/3">
                 <p className="paragraph-style text-85rgba">{about.text}</p>
@@ -39,9 +39,9 @@ const AboutPage = () => {
                 <p className="paragraph-style text-85rgba">{job.description}</p>
               </li>
             ))}
-        <a 
-        className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400" 
-        href='../assets/images/cv_en_sw.pdf' download>Download CV in PDF</a>
+          <a
+            className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+            href='../assets/images/cv_en_sw.pdf' download>Download CV in PDF</a>
         </ul>
       </article>
     </section>
