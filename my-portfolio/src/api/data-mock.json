@@ -48,19 +48,27 @@
       },
       {
         "name": "Front-End",
-        "company": "Consid AB",
-        "place": "Sweden",
-        "date": "Aug 2021 - Oct 2021",
+        "company": "BeeReal",
+        "place": "Argentina",
+        "date": "2020 - 2021",
         "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
-        "description": "Development of a new website for a Swedish startup. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+        "description": "Led the development of an external website for BeeReal as a solution architect, utilizing React and Redux to create a seamless and intuitive user experience. Implemented blocks and modules with associated styling for a new mobile app, improving the overall design and functionality."
       },
       {
         "name": "Front-End",
-        "company": "Consid AB",
-        "place": "Sweden",
-        "date": "Jun 2021 - Aug 2021",
+        "company": "IT Resources",
+        "place": "Argentina",
+        "date": "2019 - 2020",
         "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
-        "description": ""
+        "description": "Contributed to the development of a web application using React and React Native, focusing on expanding features and refining processes. Improved the overall user experience by implementing new features and optimizing usability standards. Worked within the Agile Scrum framework to deliver high-quality results on a tight timeline."
+      },
+      {
+        "name": "Front-End",
+        "company": "Globant",
+        "place": "Argentina",
+        "date": "2018 - 2019",
+        "tech": "Angular 2.0, RxJS, JavaScript, HTML, CSS",
+        "description": "I played an active role in the development of the product from start to finish, using Angular +2. My contributions included improving various features for thousands of users."
       }
     ]
   },
