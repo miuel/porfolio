@@ -13,8 +13,8 @@ const AboutPage = () => {
 
                 <img
                   src="../assets/images/logo.png"
-                  width={180}
-                  className=" transform hover:rotate-360 hover:scale-95 transition duration-500 ease-in-out "
+                  width={160}
+                  className="mt-4  transform hover:rotate-360 hover:scale-95 transition duration-500 ease-in-out "
                 />
               </div>
               <div className="w-2/3">
@@ -31,7 +31,7 @@ const AboutPage = () => {
         <ul className="w-2/3">
           {data.skills &&
             data.skills.jobs.map((job, index) => (
-              <li className="pb-6 mb-6 border-b border-stone-400" key={job.company + index.toString()}>
+              <li className="pb-6 mb-6 border-b border-stone-400 last-of-type:border-none " key={job.company + index.toString()}>
                 <h2 className="text-2xl">{job.name} • {job.company}</h2>
                 <i className="text-sm text-stone-400" >{job.tech}</i>
                 <br />
@@ -39,6 +39,9 @@ const AboutPage = () => {
                 <p className="paragraph-style text-85rgba">{job.description}</p>
               </li>
             ))}
+        <a 
+        className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400" 
+        href='../assets/images/cv_en_sw.pdf' download>Download CV in PDF</a>
         </ul>
       </article>
     </section>

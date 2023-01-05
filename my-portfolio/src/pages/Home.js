@@ -56,7 +56,7 @@ const HomePage = () => {
           <p className="break-words paragraph-style mb-12">{data.homeText}</p>
 
           <Link
-            className="bg-stone-400 text-white font-bold p-4 rounded   hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+            className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
             to="/contact"
           >
             Let's talk{" "}
