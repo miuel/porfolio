@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="ticker__inner">
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeTxt.map((marquee) => (
+              {data.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -21,7 +21,7 @@ const HomePage = () => {
           </div>
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeTxt.map((marquee) => (
+              {data.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -31,7 +31,7 @@ const HomePage = () => {
           </div>
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeTxt.map((marquee) => (
+              {data.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -65,7 +65,7 @@ const HomePage = () => {
       </section>
 
       <section className=" mt-4 flex gap-8 m-0 home-section-h">
-        <Card />
+        <Card image={data.imgMonkey} />
         <Card />
         <Card />
       </section>

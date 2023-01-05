@@ -1,5 +1,5 @@
 {
-  "marqueeTxt": [
+  "marqueeText": [
     {
       "text": "welcome"
     },
@@ -19,6 +19,7 @@
       "text": "Keep it simple, make it stand out"
     }
   ],
+  "imgMonkey": "../../assets/images/collage.png",
   "slogan": "Creating beautiful experiences, one pixel at a time",
   "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design.",
   "aboutMe": [
@@ -35,7 +36,7 @@
         "company": "Consid AB",
         "place": "Sweden",
         "date": "Dec 2021 - ongoing",
-        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "tech": "React, Next.js, Tailwind, Storybook, JavaScript, HTML, CSS",
         "description": "Management and further development of the existing website as well as a project to develop and build a new component library. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
       },
       {
@@ -43,15 +44,15 @@
         "company": "HejAlbert",
         "place": "Sweden",
         "date": "Oct 2021 - Dec 2021",
-        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
-        "description": "Development of a new website for a Swedish startup. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+        "tech": "React Native, Typescript, Redux, JavaScript, HTML, CSS",
+        "description": "Worked on the development of a new feature for a mobile application using React Native, Typescript. Improved the user experience by implementing new features and functionality for a punctual time as Black Friday and Chirstmas, resulting in increased engagement. Also integrated Google Analytics to track usage and performance."
       },
       {
         "name": "Front-End",
         "company": "BeeReal",
         "place": "Argentina",
         "date": "2020 - 2021",
-        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "tech": "React, React Native, Redux Thunk, Sass, Storybook, JavaScript, HTML, CSS",
         "description": "Led the development of an external website for BeeReal as a solution architect, utilizing React and Redux to create a seamless and intuitive user experience. Implemented blocks and modules with associated styling for a new mobile app, improving the overall design and functionality."
       },
       {
@@ -59,7 +60,7 @@
         "company": "IT Resources",
         "place": "Argentina",
         "date": "2019 - 2020",
-        "tech": "React, Next.js, Tailwind, JavaScript, HTML, CSS",
+        "tech": "React, React Native, Redux Thunk, JavaScript, HTML, CSS",
         "description": "Contributed to the development of a web application using React and React Native, focusing on expanding features and refining processes. Improved the overall user experience by implementing new features and optimizing usability standards. Worked within the Agile Scrum framework to deliver high-quality results on a tight timeline."
       },
       {
@@ -72,6 +73,24 @@
       }
     ]
   },
+  "contact": {
+    "title": "Contact",
+    "text": "Don't hesitate to reach out if you have questions or want to collaborate. ",
+    "longText": "Keeping in touch with people can be incredibly beneficial for a variety of reasons. For starters, staying connected with others allows you to stay up-to-date on their work and projects, which can be especially useful if you're in the same field or have similar interests. It also gives you the opportunity to collaborate on future projects or opportunities, which can help you grow both personally and professionally. Maintaining connections with others can also provide support and encouragement in your endeavors. Whether you're facing challenges in your career or personal life, having a network of people you can turn to for advice or simply to lend an ear can be incredibly valuable. And of course, keeping in touch with others can also be a great way to share resources and advice, whether you're looking for recommendations for a service provider or just want to bounce ideas off someone. In addition to the practical benefits of staying connected with others, keeping in touch with people can also be a great way to build and maintain a strong professional network. Having a diverse network of contacts can open up new doors and opportunities, and staying in touch with people you've worked with in the past can help you stay top-of-mind when those opportunities arise. But beyond the professional benefits, keeping in touch with others can also be simply enjoyable. In short, keeping in touch with others can be incredibly beneficial for both personal and professional reasons. Whether you're looking to collaborate on projects, seek advice or support, do not hesitate to reach out.",
+    "email": "rivasmig@gmail.com",
+    "media": [
+      {
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/miguelrivasin/",
+        "image": "../../assets/images/linkedin.png"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/miuel/",
+        "image": "../../assets/images/github.png"
+      }
+    ]
+  },
   "footerData": [
     {
       "title": "info",
@@ -79,7 +98,7 @@
     },
     {
       "title": "contact",
-      "data": "rivasmig@gmail.com +46 072 44 37587"
+      "data": "rivasmig@gmail.com"
     },
     {
       "title": "social",

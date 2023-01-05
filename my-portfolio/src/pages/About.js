@@ -13,8 +13,8 @@ const AboutPage = () => {
 
                 <img
                   src="../assets/images/logo.png"
-                  width={120}
-                  className="mt-4"
+                  width={180}
+                  className=" transform hover:rotate-360 hover:scale-95 transition duration-500 ease-in-out "
                 />
               </div>
               <div className="w-2/3">
