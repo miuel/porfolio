@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import data from "../api/data-mock.json";
 
-const HomePage = () => { 
+const HomePage = () => {
 
   return (
     <>
@@ -50,7 +50,7 @@ const HomePage = () => {
           />
         </div>
         <div className="py-4 max-w-3xl  pr-8 w-1/2">
-          <h1 className="text-6xl line-height-1-6  font-bold font-bodoni py-7">
+          <h1 className="text-6xl line-height-1-6  font-bold font-bodoni py-5">
             {data.slogan}
           </h1>
           <p className="break-words paragraph-style mb-12">{data.homeText}</p>
@@ -69,6 +69,9 @@ const HomePage = () => {
         <Card />
         <Card />
       </section>
+
+      <span>you should talk about CREATIVE CODE + SPARK AR  </span>
+
     </>
   );
 };
