@@ -2,13 +2,14 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-      fontFamily: {				
-        'bodoni': ["Bodoni Moda, serif"],
-			},
+      fontFamily: {
+        bodoni: ["Bodoni Moda, serif"],
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("flowbite/plugin")],
+};
