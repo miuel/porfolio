@@ -1,34 +1,35 @@
 {
-  "marqueeText": [
-    {
-      "text": "welcome"
-    },
-    {
-      "text": "Miguel's Portfolio Site"
-    },
-    {
-      "text": "Technology and aesthetics, hand in hand"
-    },
-    {
-      "text": "Front-End Developer"
-    },
-    {
-      "text": "Innovating the present, shaping the future"
-    },
-    {
-      "text": "Keep it simple, make it stand out"
-    }
-  ],
-  "imgMonkey": "../../assets/images/collage.png",
-  "slogan": "Creating beautiful experiences, one pixel at a time",
-  "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design.",
-  "aboutMe": [
+  "home": {
+    "marqueeText": [
+      {
+        "text": "welcome"
+      },
+      {
+        "text": "Miguel's Portfolio Site"
+      },
+      {
+        "text": "Technology and aesthetics, hand in hand"
+      },
+      {
+        "text": "Front-End Developer"
+      },
+      {
+        "text": "Innovating the present, shaping the future"
+      },
+      {
+        "text": "Keep it simple, make it stand out"
+      }
+    ],
+    "slogan": "Creating beautiful experiences, one pixel at a time",
+    "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design."
+  },
+  "about": [
     {
       "title": "About",
       "text": "Miguel Rivas is a talented frontend developer with a deep love of art and design. Born in Argentina, Miguel now calls Sweden home, where he lives with his family. Though far from his roots, Miguel's passion for creating beautiful and functional websites and applications remains unwavering. With a keen eye for detail and a love of all things tech, Miguel is always seeking new ways to improve his skills and push the boundaries of what is possible with code. In his free time, he enjoys exploring the latest design trends and indulging his curiosity about the art world, finding inspiration in the beauty and poetry of his surroundings"
     }
   ],
-  "skills": {
+  "experience": {
     "title": "Experience",
     "jobs": [
       {
@@ -73,6 +74,9 @@
       }
     ]
   },
+  "projects": {
+    "header": "The process of creating a project involves identifying the goal and scope, gathering resources and assembling a team, developing a plan, and regularly assessing progress. Once the project is completed, it is important to reflect on the process and evaluate its success. This includes reviewing what worked well, what could have been done differently, and what can be learned from the experience."
+  },
   "contact": {
     "title": "Contact",
     "text": "Don't hesitate to reach out if you have questions or want to collaborate. ",
@@ -87,14 +91,32 @@
       {
         "name": "github",
         "url": "https://github.com/miuel/"
-      }, 
-      {        
+      },
+      {
         "name": "twitter",
         "url": "https://twitter.com/2N_mikel"
       }
     ]
   },
-  "footerData": [
+  "navigation": [
+    {
+      "name": "HOME",
+      "url": "/"
+    },
+    {
+      "name": "ABOUT",
+      "url": "/about"
+    },
+    {
+      "name": "PROJECTS",
+      "url": "/projects"
+    },
+    {
+      "name": "CONTACT",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
     {
       "title": "info",
       "data": "Miguel Rivas Frontend Developer Halmstad, Sweden"
@@ -107,5 +129,12 @@
       "title": "social",
       "data": "linkedin.com/in/miguelrivasin/ github.com/miuel"
     }
-  ]
+  ],
+  "imgMonkey": "../../assets/images/collage.png",
+  "collageAnimal": "../assets/images/collage-animal.png",
+  "grid": "../assets/images/grid.png",
+  "cv": "../assets/images/cv_en_sw.pdf",
+  "cvText": "Download CV",
+  "map": "../assets/images/halmstad.png",
+  "mapText": "Halmstad, Sweden"
 }

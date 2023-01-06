@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white w-full flex mt-10 py-10 gap-8 border-top-1">
-      {data.footerData.map((item) => (
+      {data.footer.map((item) => (
         <div >
           <h3 className="font-bold grid-cols-1 pl-4 font-monospace" key={item}>
             {item.title}

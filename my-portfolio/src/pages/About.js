@@ -5,8 +5,8 @@ const AboutPage = () => {
   return (
     <section className="overflow-auto max-w-6xl m-auto ">
       <article >
-        {data.aboutMe &&
-          data.aboutMe.map((about, i) => (
+        {data.about &&
+          data.about.map((about, i) => (
             <div className="flex p-10 gap-8 border-b border-stone-400" key={about.title}>
               <div className="w-1/3" >
                 <h1>{about.title}</h1>
@@ -26,11 +26,11 @@ const AboutPage = () => {
 
       <article className="flex p-10 gap-8">
         <div className="w-1/3">
-          <h1 >{data.skills.title}</h1>
+          <h1 >{data.experience.title}</h1>
         </div>
         <ul className="w-2/3">
-          {data.skills &&
-            data.skills.jobs.map((job, index) => (
+          {data.experience &&
+            data.experience.jobs.map((job, index) => (
               <li className="pb-6 mb-6 border-b border-stone-400 last-of-type:border-none " key={job.company + index.toString()}>
                 <h2 className="text-2xl">{job.name} • {job.company}</h2>
                 <i className="text-sm text-stone-400" >{job.tech}</i>
@@ -41,7 +41,7 @@ const AboutPage = () => {
             ))}
           <a
             className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
-            href='../assets/images/cv_en_sw.pdf' download>Download CV in PDF</a>
+            href={data.cv} download>{data.cvText}</a>
         </ul>
       </article>
     </section>

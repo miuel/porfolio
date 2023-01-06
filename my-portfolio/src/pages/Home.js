@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className="ticker__inner">
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeText.map((marquee) => (
+              {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -21,7 +21,7 @@ const HomePage = () => {
           </div>
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeText.map((marquee) => (
+              {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -31,7 +31,7 @@ const HomePage = () => {
           </div>
           <div className="ticker__groups">
             <div className="ticker__group font-mono font-semibold text-2xl ">
-              {data.marqueeText.map((marquee) => (
+              {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
                   <span className="ticker__bullet">•</span>
@@ -45,15 +45,17 @@ const HomePage = () => {
       <section className="relative flex gap-8 m-0 home-section-h">
         <div className="w-1/2">
           <img
-            className="object-fill  "
+            className="object-fill"
+            alt="home image"
+            // replace this with your own image
             src="../assets/images/member-feature_1600.jpeg"
           />
         </div>
         <div className="py-4 max-w-3xl  pr-8 w-1/2">
-          <h1 className="text-6xl line-height-1-6  font-bold font-bodoni py-5">
-            {data.slogan}
+          <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
+            {data.home.slogan}
           </h1>
-          <p className="break-words paragraph-style mb-12">{data.homeText}</p>
+          <p className="break-words paragraph-style mb-12">{data.home.homeText}</p>
 
           <Link
             className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
@@ -64,10 +66,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className=" mt-4 flex gap-8 m-0 home-section-h">
+      <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
         <Card image={data.imgMonkey} />
-        <Card />
-        <Card />
+        <Card image={data.collageAnimal} />
+        <Card image={data.grid} />
       </section>
 
       <span>you should talk about CREATIVE CODE + SPARK AR  </span>

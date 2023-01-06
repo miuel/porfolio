@@ -6,7 +6,7 @@ const ContactPage = () => {
   }
 
   return (
-    <section className="overflow-auto max-w-6xl m-auto ">
+    <section className="overflow-auto max-w-6xl m-auto">
       <article>
         <div className="flex p-10 gap-8" key={data.contact.title}>
           <div className="w-1/3">
@@ -45,7 +45,7 @@ const ContactPage = () => {
             </div>
 
             <div className="mt-5">
-              <img className="w-full mr-0" src="../assets/images/halmstad.png" />
+              <img className="w-full mr-0" src={data.map} alt={data.mapText} />
             </div>
           </div>
         </div>
