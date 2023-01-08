@@ -156,4 +156,10 @@
   .h-600{
     height: 600px !important;
   }
+
+  .grid-col-custom {
+    @apply grid gap-5 pl-4;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr) );
+    
+  }
 }
