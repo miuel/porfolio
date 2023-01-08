@@ -136,5 +136,9 @@
   "cv": "../assets/images/cv_en_sw.pdf",
   "cvText": "Download CV",
   "map": "../assets/images/halmstad.png",
-  "mapText": "Halmstad, Sweden"
+  "mapText": "Halmstad, Sweden",
+  "intro": "../assets/images/intro_body.gif",
+  "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
+  "walletSm": "../assets/images/projects/jobs/itr/wallet-sm.gif",
+  "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif"
 }

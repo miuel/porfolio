@@ -3,6 +3,11 @@ import { Badge, Timeline } from "flowbite-react";
 import data from "../api/data-mock.json";
 
 const AboutPage = () => {
+
+  if (window) {
+    window.scrollTo(0, 0);
+  }
+  
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <article>
@@ -38,13 +43,14 @@ const AboutPage = () => {
                 <Timeline.Item key={job.company + index.toString()}>
                   <Timeline.Point />
                   <Timeline.Content>
-                    <Timeline.Time>{job.date}</Timeline.Time>
+                    <Timeline.Time className="text-sm">{job.date}</Timeline.Time>
                     <Timeline.Title>
                       {job.name} • {job.place}
                     </Timeline.Title>
                     <div className="flex flex-wrap gap-2 py-2">
                       {job.tech.map((tech, index) => (
                         <Badge
+                          className="font-mono uppercase font-normal text-xs"
                           color="indigo"
                           size="sm"
                           key={tech + index.toString()}

@@ -4,13 +4,15 @@ import Card from "../components/Card";
 import data from "../api/data-mock.json";
 
 const HomePage = () => {
-
+  if (window) {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
-      <div className=" bg-stone-400 text-white py-5 ticker ticker--is-animating overflow-x-hidden ">
+      <div className=" bg-stone-400 text-white py-2 ticker-h ticker--is-animating overflow-x-hidden ">
         <div className="ticker__inner">
           <div className="ticker__groups">
-            <div className="ticker__group font-mono font-semibold text-2xl ">
+            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
               {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
@@ -20,7 +22,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="ticker__groups">
-            <div className="ticker__group font-mono font-semibold text-2xl ">
+            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
               {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
@@ -30,7 +32,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="ticker__groups">
-            <div className="ticker__group font-mono font-semibold text-2xl ">
+            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
               {data.home.marqueeText.map((marquee) => (
                 <>
                   <span className="uppercase"> {marquee.text}</span>
@@ -67,6 +69,8 @@ const HomePage = () => {
       </section>
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
+        <img src={data.walletSm} className="w-auto " />
+        
         <Card image={data.imgMonkey} />
         <Card image={data.collageAnimal} />
         <Card image={data.grid} />

@@ -6,8 +6,10 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import React from "react";
 
 function App() {
+
   return (
     <div>
       <Navigation />

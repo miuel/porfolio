@@ -3,6 +3,9 @@ import data from "../api/data-mock.json";
 import { Carousel } from "flowbite-react";
 
 const ProjectPage = () => {
+  if (window) {
+    window.scrollTo(0, 0);
+  }
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <div className="mt-5 py-4 border-y border-y-stone-400">
@@ -11,11 +14,12 @@ const ProjectPage = () => {
       <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
         Projects
       </h1>
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-600">
+      <div className="grid grid-cols-2 gap-4 h-664">
         <Carousel>
-          <img
-            src={data.imgMonkey}
+          {/* <img
+            src={data.intro}
             alt="..."
+            className="object-contain"
           />
           <img
             src={data.collageAnimal}
@@ -32,7 +36,12 @@ const ProjectPage = () => {
           <img
             src={data.grid}
             alt="..."
-          />
+          /> */}
+          <img src={data.ospuncba} className="w-auto " />
+        </Carousel>
+        <Carousel indicators={false} >
+          <img src={data.wallet} className="w-auto " />
+          
         </Carousel>
       </div>
     </section>

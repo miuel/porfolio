@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         bodoni: ["Bodoni Moda, serif"],
       },
+      height: {
+        "664": "41.5rem"
+      }
     },
   },
   plugins: [require("flowbite/plugin")],
