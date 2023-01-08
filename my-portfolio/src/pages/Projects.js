@@ -21,8 +21,17 @@ const ProjectPage = () => {
       </h1>
 
       <div className="grid-col-custom">
-        <img src={data.ospuncba} className="w-auto " />
-        <img src={data.wallet} className="w-auto rounded-md border-stone-400 border " />
+        <div>
+          <img src={data.ospuncba} className="w-auto" alt="" loading="lazy" />
+          <small>mobile developer - react native</small>
+        </div>
+        <div>
+          <img src={data.wallet} className="w-auto rounded-md border-stone-400 border " 
+            alt=""
+            loading="lazy"
+            />
+            <small>mobile developer - react native</small>
+        </div>
       </div>
 
       <div className="mt-5 h-56 sm:h-64 xl:h-80 2xl:h-96">
