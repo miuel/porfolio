@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import data from "../api/data-mock.json";
+import Marquee from "../components/Marquee";
 
 const HomePage = () => {
   if (window) {
@@ -9,40 +10,13 @@ const HomePage = () => {
   }
   return (
     <>
-      <div className=" bg-stone-400 text-white py-2 ticker-h ticker--is-animating overflow-x-hidden ">
-        <div className="ticker__inner">
-          <div className="ticker__groups">
-            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
-              {data.home.marqueeText.map((marquee) => (
-                <>
-                  <span className="uppercase"> {marquee.text}</span>
-                  <span className="ticker__bullet">•</span>
-                </>
-              ))}
-            </div>
-          </div>
-          <div className="ticker__groups">
-            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
-              {data.home.marqueeText.map((marquee) => (
-                <>
-                  <span className="uppercase"> {marquee.text}</span>
-                  <span className="ticker__bullet">•</span>
-                </>
-              ))}
-            </div>
-          </div>
-          <div className="ticker__groups">
-            <div className="ticker__group font-mono letter-spacing-sm text-2xl ">
-              {data.home.marqueeText.map((marquee) => (
-                <>
-                  <span className="uppercase"> {marquee.text}</span>
-                  <span className="ticker__bullet">•</span>
-                </>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <Marquee
+        data={data.home.marqueeText}
+        repeatTimes={3}
+        bgColor="bg-stone-400"
+        height={"h-14"}
+        fontSize={"text-2xl"}
+      />
 
       <section className="relative flex gap-8 m-0 home-section-h">
         <div className="w-1/2">
@@ -57,7 +31,9 @@ const HomePage = () => {
           <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
             {data.home.slogan}
           </h1>
-          <p className="break-words paragraph-style mb-12">{data.home.homeText}</p>
+          <p className="break-words paragraph-style mb-12">
+            {data.home.homeText}
+          </p>
 
           <Link
             className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
@@ -68,16 +44,23 @@ const HomePage = () => {
         </div>
       </section>
 
+      <Marquee
+        data={data.home.marqueeText}
+        repeatTimes={1}
+        bgColor="bg-black"
+        height={"h-24"}
+        fontSize={"text-4xl"}
+      />
+
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
         <img src={data.walletSm} className="w-auto " />
-        
+
         <Card image={data.imgMonkey} />
         <Card image={data.collageAnimal} />
         <Card image={data.grid} />
       </section>
 
-      <span>you should talk about CREATIVE CODE + SPARK AR  </span>
-
+      <span>you should talk about CREATIVE CODE + SPARK AR </span>
     </>
   );
 };
