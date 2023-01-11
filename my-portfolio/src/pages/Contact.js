@@ -20,13 +20,13 @@ const ContactPage = () => {
             {data.contact.media &&
               data.contact.media.map((media, i) => (
                 <a
-                  className="mr-4 cursor-pointer hover:text-stone-400"
+                  className="mr-4 p-2 cursor-pointer hover:bg-stone-400 hover:text-white"
                   href={media.url}
                   target="_blank"
                   rel="noreferrer"
                   key={media.name}
                 >
-                  <span className="mb-4 pb-1 hover:border-b hover:border-stone-400">
+                  <span className="mb-4">
                     {media.name}
                   </span>
                 </a>
