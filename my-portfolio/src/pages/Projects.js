@@ -12,7 +12,7 @@ const ProjectPage = () => {
 
         <h1 className="">{data.projects.title}</h1>
         <div className="mt-5 py-4 border-y border-y-stone-400">
-          <p className="paragraph-style text-85rgba">{data.projects.header}</p>
+          <p className="paragraph-style text-85rgba">{data.projects.description}</p>
         </div>
 
         <div className="py-5 border-b border-y-stone-400 h-56 sm:h-64 xl:h-80 2xl:h-96">

@@ -1,25 +1,5 @@
 {
   "home": {
-    "marqueeText": [
-      {
-        "text": "welcome"
-      },
-      {
-        "text": "Miguel's Portfolio Site"
-      },
-      {
-        "text": "Technology and aesthetics, hand in hand"
-      },
-      {
-        "text": "Front-End Developer"
-      },
-      {
-        "text": "Innovating the present, shaping the future"
-      },
-      {
-        "text": "Keep it simple, make it stand out"
-      }
-    ],
     "slogan": "Creating beautiful experiences, one pixel at a time",
     "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design."
   },
@@ -76,7 +56,8 @@
   },
   "projects": {
     "title": "Projects",
-    "header": "The process of creating a project involves identifying the goal and scope, gathering resources and assembling a team, developing a plan, and regularly assessing progress. Once the project is completed, it is important to reflect on the process and evaluate its success. This includes reviewing what worked well, what could have been done differently, and what can be learned from the experience. In conclusion, if you'd like to work together to build a solid process for your project, I'm here to help. Let's chat!"
+    "header": "The process of creating a project involves identifying the goal and scope, gathering resources and assembling a team, developing a plan, and regularly assessing progress. Once the project is completed, it is important to reflect on the process and evaluate its success. This includes reviewing what worked well, what could have been done differently, and what can be learned from the experience. In conclusion, if you'd like to work together to build a solid process for your project, I'm here to help. Let's chat!",
+    "description": "Welcome to my Projects section! Here, you'll find a collection of the work that I'm most proud of and that best showcases my skills and experience. On this page, you'll find a variety of projects that I've worked on, including web development projects, data analysis projects, and software engineering projects. Each project includes a brief description, screenshots, and a link to view or interact with the project. I've chosen to include projects that demonstrate my technical skills, as well as my ability to work on a team and think creatively. You'll see how I've tackled real-world problems and delivered solutions that were both functional and visually appealing. I hope that you'll find my projects to be informative and interesting."
   },
   "contact": {
     "title": "Contact",
@@ -99,6 +80,46 @@
       }
     ]
   },
+  "marqueeHeaderText": [
+    {
+      "text": "welcome"
+    },
+    {
+      "text": "Miguel's Portfolio Site"
+    },
+    {
+      "text": "Technology and aesthetics, hand in hand"
+    },
+    {
+      "text": "Front-End Developer"
+    },
+    {
+      "text": "Innovating the present, shaping the future"
+    },
+    {
+      "text": "Keep it simple, make it stand out"
+    }
+  ],
+  "marqueeJobsText": [
+    {
+      "text": "Front-End Developer ✚ BeeReal ✚ Argentina"
+    },
+    {
+      "text": "Front-End Developer ✚ IT Resources ✚ Argentina"
+    },
+    {
+      "text": "Front-End Developer ✚ Globant ✚ Argentina"
+    },
+    {
+      "text": "Front-End Developer ✚ BeeReal ✚ Argentina"
+    },
+    {
+      "text": "Front-End Developer ✚ IT Resources ✚ Argentina"
+    },
+    {
+      "text": "Front-End Developer ✚ Globant ✚ Argentina"
+    }
+  ],
   "navigation": [
     {
       "name": "HOME",
