@@ -25,7 +25,7 @@
         "company": "HejAlbert",
         "place": "Sweden",
         "date": "Oct 2021 - Dec 2021",
-        "tech": ["React Native", "Typescript", "Redux", "JavaScript", "HTML", "CSS"],
+        "tech": ["React Native", "Styled Components", "Typescript", "Redux", "JavaScript", "HTML", "CSS"],
         "description": "Worked on the development of a new feature for a mobile application using React Native, Typescript. Improved the user experience by implementing new features and functionality for a punctual time as Black Friday and Chirstmas, resulting in increased engagement. Also integrated Google Analytics to track usage and performance."
       },
       {
@@ -162,5 +162,6 @@
   "intro": "../assets/images/intro_body.gif",
   "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
   "walletSm": "../assets/images/projects/jobs/itr/wallet-sm.gif",
-  "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif"
+  "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif",
+  "press": "../assets/images/press.gif"
 }
