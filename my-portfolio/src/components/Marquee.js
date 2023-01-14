@@ -3,7 +3,7 @@
 
 import React from "react";
 
-const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize }) => {
+const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet }) => {
   const arrRepeatTimes = Array.from({ length: repeatTimes }); 
 
   return (
@@ -19,7 +19,7 @@ const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize }) => {
                       return (
                         <>
                           <span className="uppercase">{marquee.text}</span>
-                          <span className="marquee__bullet">•</span>
+                          {showBullet && <span className="marquee__bullet">•</span>}
                         </>
                       );
                     })}

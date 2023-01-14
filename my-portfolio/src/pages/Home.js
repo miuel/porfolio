@@ -11,11 +11,12 @@ const HomePage = () => {
   return (
     <>
       <Marquee
-        data={data.home.marqueeText}
+        data={data.marqueeHeaderText}
         repeatTimes={3}
         bgColor="bg-stone-400"
         height={"h-14"}
         fontSize={"text-2xl"}
+        showBullet={true}
       />
 
       <section className="relative flex gap-8 m-0 home-section-h">
@@ -44,13 +45,14 @@ const HomePage = () => {
         </div>
       </section>
 
-      <Marquee
-        data={data.home.marqueeText}
+   {/*    <Marquee
+        data={data.marqueeJobsText}
         repeatTimes={1}
         bgColor="bg-black"
         height={"h-24"}
         fontSize={"text-4xl"}
-      />
+        showBullet={false}
+      /> */}
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
         <img src={data.walletSm} className="w-auto " />
@@ -59,6 +61,7 @@ const HomePage = () => {
         <Card image={data.collageAnimal} />
         <Card image={data.grid} />
       </section>
+      <img src={data.press} className="w-auto " />
 
       <span>you should talk about CREATIVE CODE + SPARK AR </span>
     </>
