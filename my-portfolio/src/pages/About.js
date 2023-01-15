@@ -7,7 +7,7 @@ const AboutPage = () => {
   if (window) {
     window.scrollTo(0, 0);
   }
-  
+
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <article>
@@ -35,7 +35,7 @@ const AboutPage = () => {
         <div className="w-1/3">
           <h1>{data.experience.title}</h1>
         </div>
-        
+
         <div className="w-2/3">
           <Timeline>
             {data.experience &&
@@ -47,6 +47,10 @@ const AboutPage = () => {
                     <Timeline.Title>
                       {job.name} • {job.place}
                     </Timeline.Title>
+
+                    <Timeline.Body className=" mb-1 ">
+                      {job.company}
+                    </Timeline.Body>
                     <div className="flex flex-wrap gap-2 py-2">
                       {job.tech.map((tech, index) => (
                         <Badge
@@ -59,11 +63,8 @@ const AboutPage = () => {
                         </Badge>
                       ))}
                     </div>
-
-                    <Timeline.Body>
-                      <p className="paragraph-style text-85rgba">
-                        {job.description}
-                      </p>
+                    <Timeline.Body className="paragraph-style text-85rgba">
+                      {job.description}
                     </Timeline.Body>
                   </Timeline.Content>
                 </Timeline.Item>
