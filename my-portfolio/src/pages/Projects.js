@@ -15,19 +15,15 @@ const ProjectPage = () => {
           <p className="paragraph-style text-85rgba">{data.projects.description}</p>
         </div>
 
-        <div className="py-5 border-b border-y-stone-400 h-56 sm:h-64 xl:h-80 2xl:h-96">
-          <Carousel>
-            <img src={data.intro} alt="..." className="object-contain" />
-            <img src={data.collageAnimal} alt="..." />
-            <img src={data.grid} alt="..." />
-            <img src={data.imgMonkey} alt="..." />
-            <img src={data.grid} alt="..." />
-          </Carousel>
-        </div>
+
 
         <h2 className="text-2xl text-85rgba py-5">
-          Mobile
+          Professional
         </h2>
+
+        <h3 className="text-xl text-85rgba py-5">
+          Mobile
+        </h3>
 
         <div className="grid-col-custom">
           <div>
@@ -43,6 +39,29 @@ const ProjectPage = () => {
             />
             <small>mobile developer - react native</small>
           </div>
+        </div>
+
+        <h2 className="text-2xl text-85rgba py-5">
+          Personal
+        </h2>
+
+        <div className="grid-col-custom">
+          <img src={data.letters} className="w-auto max-w-lg" alt="" loading="lazy" />
+          <video loop autoPlay={true} controls >
+            <source src={data.organic} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+
+        </div>
+        <div className="py-5 border-b border-y-stone-400 h-56 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel>
+            <img src={data.intro} alt="..." className="object-contain" />
+            <img src={data.collageAnimal} alt="..." />
+            <img src={data.grid} alt="..." />
+            <img src={data.imgMonkey} alt="..." />
+            <img src={data.grid} alt="..." />
+          </Carousel>
         </div>
 
       </div>
