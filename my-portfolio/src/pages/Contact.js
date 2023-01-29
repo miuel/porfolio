@@ -35,7 +35,7 @@ const ContactPage = () => {
 
           <div className="pb-5 border-b border-stone-400">
             <p className="mt-5 paragraph-style text-85rgba">
-              {data.contact.longText}
+              {data.contact.shortText}
             </p>
           </div>
 

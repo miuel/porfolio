@@ -31,7 +31,7 @@ const HomePage = () => {
           />
           
         </div>
-        <div className="py-4 max-w-3xl  pr-8 w-1/2">
+        <div className="py-4 max-w-3xl pr-8 w-1/2">
           <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
             {data.home.slogan}
           </h1>
