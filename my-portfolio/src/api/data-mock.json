@@ -1,12 +1,12 @@
 {
   "home": {
     "slogan": "Creating beautiful experiences, one pixel at a time",
-    "homeText": "As a front-end developer, Miguel has more than 5 years of experience building smooth, accessible, and user-friendly websites and mobile applications. He has a strong background in Javascript,  ReactJS and React Native, and a passion for improving user experience. Miguel has contributed to the development of numerous projects and has demonstrated the ability to work effectively with a variety of technologies, including AJAX, HTML5, CSS3, Typescript and Node JS. He has a proven track record of delivering high-quality results and is always looking for new ways to improve and excel in his work. Miguel is a dedicated and innovative developer who is constantly inspired by the intersection of technology and aesthetics. He strives to create web applications that not only serve a purpose but also delight the user with their design."
+    "homeText": "I'm a front-end developer with 5+ years of experience. I excel in React, React Native, Vanilla JS, and SSR. I prioritize accessibility and user-friendliness in websites/apps. I have a solid track record in delivering quality results and am still always seeking to improve. I find inspiration in the intersection of technology and design, striving to make applications that serve a purpose and please users with their appearance."
   },
   "about": [
     {
       "title": "About",
-      "text": "Miguel Rivas is a talented frontend developer with a deep love of art and design. Born in Argentina, Miguel now calls Sweden home, where he lives with his family. Though far from his roots, Miguel's passion for creating beautiful and functional websites and applications remains unwavering. With a keen eye for detail and a love of all things tech, Miguel is always seeking new ways to improve his skills and push the boundaries of what is possible with code. In his free time, he enjoys exploring the latest design trends and indulging his curiosity about the art world, finding inspiration in the beauty and poetry of his surroundings"
+      "text": "I'm Miguel Rivas, a front-end developer with roots in Argentina and a heart for art and design. With my family by my side in Sweden, I pour my love for creation into building beautiful and functional websites and apps. I'm constantly learning, seeking new ways to improve and push boundaries with code. Art and design inspire me, fueling my desire to bring fresh perspectives to my work. As a family-oriented person, I also enjoy constructing educational toys for my child. My mission is to infuse each project with a unique and personal touch, showcasing my passion for technology, aesthetics, and the joy of creation."
     }
   ],
   "experience": {
@@ -18,7 +18,7 @@
         "place": "Sweden",
         "date": "Dec 2021 - ongoing",
         "tech": ["React", "Next.js", "Tailwind", "Storybook", "JavaScript", "HTML", "CSS"],
-        "description": "Management and further development of the existing website as well as a project to develop and build a new component library. Implemented server-side rendering (SSR) to improve load times and reduce the amount of data transferred between the server and the client. Utilized code splitting and lazy loading to only load the components and resources that are needed for a particular page, reducing the overall size of the application and improving performance. Optimized images and other media assets to reduce their file size and improve loading times. Used techniques such as minification, compression, and concatenation to reduce the size of the codebase and improve performance.Utilized browser caching and other techniques to reduce the number of requests made to the server and improve the overall speed of the application."
+        "description": "I am currently managing and developing an existing e-commerce website, as well as working on a new component library project. I am working with server-side rendering to improve load times and reduce data transfer. I am utilizing code splitting and lazy loading to improve performance by only loading necessary components and resources. I am also optimizing images and other media assets to reduce file size and improve loading times."
       },
       {
         "name": "Front-End",
@@ -33,8 +33,8 @@
         "company": "BeeReal",
         "place": "Argentina",
         "date": "2020 - 2021",
-        "tech": ["React", "React Native", "Redux Thunk", "Sass", "Storybook", "JavaScript", "HTML", "CSS"],
-        "description": "Led the development of an external website for BeeReal as a solution architect, utilizing React and Redux to create a seamless and intuitive user experience. Implemented blocks and modules with associated styling for a new mobile app, improving the overall design and functionality."
+        "tech": ["React", "React Native", "Redux Thunk", "Sass", "JavaScript", "HTML", "CSS", "Firebase"],
+        "description": "Led the development of an external website for BeeReal as a solution architect, utilizing React Native, Redux, Firebase to create a seamless and intuitive user experience. Implemented blocks and modules with associated styling for a new mobile app, improving the overall design and functionality."
       },
       {
         "name": "Front-End",
@@ -157,7 +157,7 @@
   "grid": "../assets/images/grid.png",
   "cv": "../assets/images/cv_en_sw.pdf",
   "cvText": "Download CV",
-  "map": "../assets/images/halmstad.png",
+  "map": "../assets/images/halmstad.webp",
   "mapText": "Halmstad, Sweden",
   "intro": "../assets/images/intro_body.gif",
   "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
@@ -165,5 +165,8 @@
   "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif",
   "letters": "../assets/images/projects/personal/letters.gif",
   "organic": "../assets/images/projects/personal/organic.mp4",
-  "press": "../assets/images/press.gif"
+  "press": "../assets/images/press.gif",
+  "homeMeImg": "../assets/images/home-me.jpeg",
+  "homeMeMP4": "../assets/images/home-me.mp4", 
+  "fashionable": "../assets/images/fashionable.jpeg"
 }

@@ -54,16 +54,16 @@ const ProjectPage = () => {
         </div>
 
         <div>
-          <iframe width="25%" height="200" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203273530&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style={{ "fontSize": "10px", "color": "#cccccc", "lineBreak": "anywhere", "wordBreak": "normal", "overflow": "hidden", "whiteSpace": "nowrap", "textOverflow": "ellipsis", "fontFamily": "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif", "fontWeight": "100" }}>
+          <iframe width="100%" height="100" className="py-4 mx-auto" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/203273530&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style={{ "fontSize": "10px", "color": "#cccccc", "lineBreak": "anywhere", "wordBreak": "normal", "overflow": "hidden", "whiteSpace": "nowrap", "textOverflow": "ellipsis", "fontFamily": "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif", "fontWeight": "100" }}>
             <a href="https://soundcloud.com/miguel-rivas-62" title="Miguel Rivas" target="_blank" >Miguel Rivas</a> · <a href="https://soundcloud.com/miguel-rivas-62/breaks-officce" title="office break" target="_blank" style={{ "color": "#cccccc", "textDecoration": "none" }}>office break</a></div>
         </div>
         <div className="py-5 border-b border-y-stone-400 h-56 sm:h-64 xl:h-80 2xl:h-96">
           <Carousel>
-            <img src={data.intro} alt="..." className="object-contain" />
-            <img src={data.collageAnimal} alt="..." />
-            <img src={data.grid} alt="..." />
-            <img src={data.imgMonkey} alt="..." />
-            <img src={data.grid} alt="..." />
+            <img loading="lazy" src={data.intro} alt="..." className="object-contain" />
+            <img loading="lazy" src={data.collageAnimal} alt="..." />
+            <img loading="lazy" src={data.grid} alt="..." />
+            <img loading="lazy" src={data.imgMonkey} alt="..." />
+            <img loading="lazy" src={data.grid} alt="..." />
           </Carousel>
         </div>
 

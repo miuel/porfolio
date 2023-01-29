@@ -44,7 +44,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mt-5">
-            <img className="w-full mr-0" src={data.map} alt={data.mapText} />
+            <img loading="lazy" className="w-full mr-0" src={data.map} alt={data.mapText} />
           </div>
         </div>
       </div>

@@ -22,11 +22,14 @@ const HomePage = () => {
       <section className="relative flex gap-8 m-0 home-section-h">
         <div className="w-1/2">
           <img
+          loading="lazy"
             className="object-fill"
             alt="home image"
             // replace this with your own image
-            src="../assets/images/member-feature_1600.jpeg"
+            //src="../assets/images/member-feature_1600.jpeg"
+            src={data.fashionable}
           />
+          
         </div>
         <div className="py-4 max-w-3xl  pr-8 w-1/2">
           <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
@@ -37,7 +40,7 @@ const HomePage = () => {
           </p>
 
           <Link
-            className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+            className=" justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
             to="/contact"
           >
             Let's talk{" "}
@@ -55,13 +58,13 @@ const HomePage = () => {
       /> */}
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
-        <img src={data.walletSm} className="w-auto " />
+        <img loading="lazy" src={data.walletSm} className="w-auto "  />
 
         <Card image={data.imgMonkey} />
         <Card image={data.collageAnimal} />
         <Card image={data.grid} />
       </section>
-      <img src={data.press} className="w-auto " />
+      <img loading="lazy" src={data.press} className="w-auto " />
 
       <span>you should talk about CREATIVE CODE + SPARK AR </span>
     </>
