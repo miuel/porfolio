@@ -20,7 +20,7 @@ const AboutPage = () => {
               <div className="w-1/3">
                 <h1>{about.title}</h1>
 
-                <div className="icon  bg-yellow-300 rounded-full shadow-md">
+                <div className="icon bg-yellow-300 rounded-full shadow-md">
                   <img loading="lazy" src="../assets/images/logo.png" />
                 </div>
               </div>
