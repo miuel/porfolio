@@ -64,7 +64,6 @@ const HomePage = () => {
         <Card image={data.collageAnimal} />
         <Card image={data.grid} />
       </section>
-      <img loading="lazy" src={data.press} className="w-auto " />
 
       <span>you should talk about CREATIVE CODE + SPARK AR </span>
     </>

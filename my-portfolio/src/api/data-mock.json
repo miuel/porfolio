@@ -132,7 +132,7 @@
     "shortText": "Get in touch with me to explore opportunities for collaboration, advice, and support. Whether for personal or professional reasons, maintaining connections can bring valuable benefits. Don't hesitate to reach out.",
     "longText": "Keeping in touch with people can be incredibly beneficial for a variety of reasons. For starters, staying connected with others allows you to stay up-to-date on their work and projects, which can be especially useful if you're in the same field or have similar interests. It also gives you the opportunity to collaborate on future projects or opportunities, which can help you grow both personally and professionally. Maintaining connections with others can also provide support and encouragement in your endeavors. Whether you're facing challenges in your career or personal life, having a network of people you can turn to for advice or simply to lend an ear can be incredibly valuable. And of course, keeping in touch with others can also be a great way to share resources and advice, whether you're looking for recommendations for a service provider or just want to bounce ideas off someone. In addition to the practical benefits of staying connected with others, keeping in touch with people can also be a great way to build and maintain a strong professional network. Having a diverse network of contacts can open up new doors and opportunities, and staying in touch with people you've worked with in the past can help you stay top-of-mind when those opportunities arise. But beyond the professional benefits, keeping in touch with others can also be simply enjoyable. In short, keeping in touch with others can be incredibly beneficial for both personal and professional reasons. Whether you're looking to collaborate on projects, seek advice or support, do not hesitate to reach out.",
     "email": "rivasmig@gmail.com",
-    "address": "Backhausgatan 1 Lgh 1302. 30296 Halmstad, Sweden",
+    "address": "Backhausgatan 1. Post Code 30296 Halmstad, Sweden",
     "media": [
       {
         "name": "linkedin",
@@ -229,7 +229,7 @@
   "grid": "../assets/images/grid.png",
   "cv": "../assets/images/cv_en_sw.pdf",
   "cvText": "Download CV",
-  "map": "../assets/images/halmstad.webp",
+  "map": "../assets/images/halmstad.png",
   "mapText": "Halmstad, Sweden",
   "intro": "../assets/images/intro_body.gif",
   "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
@@ -240,5 +240,8 @@
   "press": "../assets/images/press.gif",
   "homeMeImg": "../assets/images/home-me.jpeg",
   "homeMeMP4": "../assets/images/home-me.mp4",
-  "fashionable": "../assets/images/fashionable.jpeg"
+  "fashionable": "../assets/images/fashionable.jpeg",
+  "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
+  "sverigesnationalparker": "../assets/images/projects/jobs/consid/nv/snp.png",
+  "lavinprognoser": "../assets/images/projects/jobs/consid/nv/lavin.png"
 }
