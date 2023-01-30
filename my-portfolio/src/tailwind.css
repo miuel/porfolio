@@ -145,9 +145,9 @@
   }
 
   .icon:hover {
-    transform: translateX(-1px) rotateY(180deg);
-    -ms-transform: translateX(-1px) rotateY(180deg);
-    -webkit-transform: translateX(-1px) rotateY(180deg);
+    transform: translateX(-1px) rotateY(20deg);
+    -ms-transform: translateX(-1px) rotateY(20deg);
+    -webkit-transform: translateX(-1px) rotateY(20deg);
   }
 
   .h-600{

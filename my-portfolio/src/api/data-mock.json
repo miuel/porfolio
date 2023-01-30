@@ -10,33 +10,32 @@
     }
   ],
   "processOfCreation": {
-    "heading": "Frontend Development Process",
+    "heading": "Services",
+    "service": "Committed to delivering top-notch frontend development services rooted in brand-centric design thinking",
     "process": [
       {
-        "step1": {
-          "subheading": "Your Story",
-          "description": "Welcome to share your story with me. In this stage, I will ask detailed questions about your requirements and understand the mission of your brand. By getting to know each other and confirming our goals, we will set the foundation for our project."
-        },
-        "step2": {
-          "subheading": "Assessment",
-          "description": "Team Up and Prepare. After fully understanding your requirements, the plan we set will be the cornerstone of our agreement. It will include the project quote, schedule, and contract, which will serve as the foundation of our project."
-        },
-        "step3": {
-          "subheading": "Planning",
-          "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy."
-        },
-        "step4": {
-          "subheading": "Development",
-          "description": "The Main Event. In this stage, we will have a clear brand positioning. By developing a distinct and unique visual system that considers different scenarios, cultures, and uses, we will establish a consistent and comprehensive brand image."
-        },
-        "step5": {
-          "subheading": "Deployment",
-          "description": "Quality, Quality, Quality. In order to ensure the perfect presentation of the design result and successful production, we will provide print and media manufacturing supervision services. During the production process, we will closely communicate with the cooperative factory to pursue the improvement of the product quality."
-        },
-        "step6": {
-          "subheading": "Completion",
-          "description": "Don't forget the farewell gift. After the image recognition is complete, we will ensure the smooth operation of the brand, not only confirming the design handover, but also providing the necessary training, documentation and support materials, etc. to ensure the successful implementation of the brand."
-        }
+        "subheading": "Your Story",
+        "description": "Welcome to share your story with me. In this stage, I will ask detailed questions about your requirements and understand the mission of your brand. By getting to know each other and confirming our goals, we will set the foundation for our project."
+      },
+      {
+        "subheading": "Assessment",
+        "description": "Team Up and Prepare. After fully understanding your requirements, the plan we set will be the cornerstone of our agreement. It will include the project quote, schedule, and contract, which will serve as the foundation of our project."
+      },
+      {
+        "subheading": "Planning",
+        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy."
+      },
+      {
+        "subheading": "Development",
+        "description": "The Main Event. In this stage, we will have a clear brand positioning. By developing a distinct and unique visual system that considers different scenarios, cultures, and uses, we will establish a consistent and comprehensive brand image."
+      },
+      {
+        "subheading": "Deployment",
+        "description": "Quality, Quality, Quality. In order to ensure the perfect presentation of the design result and successful production, we will provide print and media manufacturing supervision services. During the production process, we will closely communicate with the cooperative factory to pursue the improvement of the product quality."
+      },
+      {
+        "subheading": "Completion",
+        "description": "Don't forget the farewell gift. After the image recognition is complete, we will ensure the smooth operation of the brand, not only confirming the design handover, but also providing the necessary training, documentation and support materials, etc. to ensure the successful implementation of the brand."
       }
     ]
   },
