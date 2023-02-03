@@ -22,12 +22,12 @@ const HomePage = () => {
       <section className="relative flex gap-8 m-0 home-section-h">
         <div className="w-1/2">
           <img
-          loading="lazy"
-            className="object-fill"
+            loading="lazy"
+            className="object-fill h-[600px]"
             alt="home image"
             // replace this with your own image
             //src="../assets/images/member-feature_1600.jpeg"
-            src={data.fashionable}
+            src={data.handsome}
           />
           
         </div>
@@ -48,14 +48,14 @@ const HomePage = () => {
         </div>
       </section>
 
-   {/*    <Marquee
+    <Marquee
         data={data.marqueeJobsText}
         repeatTimes={1}
         bgColor="bg-black"
         height={"h-24"}
         fontSize={"text-4xl"}
         showBullet={false}
-      /> */}
+      />
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
         <img loading="lazy" src={data.walletSm} className="w-auto "  />

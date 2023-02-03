@@ -1,5 +1,4 @@
 // About Page
-import { Badge, Timeline } from "flowbite-react";
 import data from "../api/data-mock.json";
 
 const AboutPage = () => {
