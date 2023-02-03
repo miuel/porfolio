@@ -19,19 +19,19 @@ const HomePage = () => {
         showBullet={true}
       />
 
-      <section className="relative flex gap-8 m-0 home-section-h">
+      <section className="relative flex gap-8 m-0 home-section-h pb-4">
         <div className="w-1/2">
           <img
             loading="lazy"
-            className="object-fill h-[600px]"
+            className="h-[600px] object-cover aspect-video"
             alt="home image"
             // replace this with your own image
             //src="../assets/images/member-feature_1600.jpeg"
-            src={data.handsome}
+            src={data.images.homeMeImg}
           />
           
         </div>
-        <div className="py-4 max-w-3xl pr-8 w-1/2">
+        <div className=" max-w-3xl pr-8 w-1/2">
           <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
             {data.home.slogan}
           </h1>
@@ -40,7 +40,7 @@ const HomePage = () => {
           </p>
 
           <Link
-            className=" justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+            className="justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
             to="/contact"
           >
             Let's talk{" "}
@@ -58,11 +58,10 @@ const HomePage = () => {
       />
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
-        <img loading="lazy" src={data.walletSm} className="w-auto "  />
-
-        <Card image={data.imgMonkey} />
-        <Card image={data.collageAnimal} />
-        <Card image={data.grid} />
+        <Card image={data.images.headphone} />
+        <Card image={data.images.imgMonkey} />
+        <Card image={data.images.collageAnimal} />
+        <Card image={data.images.grid} />
       </section>
 
       <span>you should talk about CREATIVE CODE + SPARK AR </span>

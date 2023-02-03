@@ -22,20 +22,26 @@ const ProjectPage = () => {
               <img
                 fetchpriority="high"
                 loading="lazy"
-                src={data.naturvardsverket}
-                alt={data.naturvardsverket}
+                src={data.images.naturvardsverket}
+                alt="natur vards verket"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
-                src={data.sverigesnationalparker}
-                alt="..."
+                src={data.images.sverigesnationalparker}
+                alt="sveriges national parker"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
-                src={data.lavinprognoser}
-                alt="..."
+                src={data.images.lavinprognoser}
+                alt="lavin prognoser"
+              />
+              <img
+                fetchpriority="low"
+                loading="lazy"
+                src={data.images.agrosty}
+                alt="agrosty"
               />
             </Carousel>
           </div>
@@ -43,24 +49,33 @@ const ProjectPage = () => {
           <h2 className="text-2xl text-85rgba py-5">Professional</h2>
 
           <h3 className="text-xl text-85rgba py-5">Mobile</h3>
-          <div className="grid-col-custom">
+          <div className="flex gap-3 pt-2">
             <div>
               <img
-                src={data.ospuncba}
+                src={data.images.ospuncba}
                 className="w-auto"
-                alt=""
+                alt="ospuncba"
                 loading="lazy"
               />
               <small>mobile developer - react native</small>
             </div>
             <div>
               <img
-                src={data.wallet}
+                src={data.images.wallet}
                 className="w-auto rounded-md border-stone-400 border "
-                alt=""
+                alt="itr digita wallet"
                 loading="lazy"
               />
               <small>mobile developer - react native</small>
+            </div>
+            <div>
+              <img
+                src={data.images.hospitalBritanico}
+                className="w-auto rounded-md border-stone-400 border "
+                alt="itr digita wallet"
+                loading="lazy"
+              />
+              <small>mobile developer - react + phonegap </small>
             </div>
           </div>
         </section>
@@ -68,21 +83,22 @@ const ProjectPage = () => {
         <section>
           <h2 className="text-2xl text-85rgba py-5">Personal</h2>
           <div className="grid-col-custom">
+            <img src={data.images.headphone} loading="lazy" />
             <img
-              src={data.letters}
+              src={data.images.letters}
               className="w-auto max-w-lg"
-              alt={data.letters}
+              alt="letters colors"
               loading="lazy"
             />
             <video loop autoPlay={true} controls>
-              <source src={data.organic} type="video/mp4" />
+              <source src={data.images.organic} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
           <div className=" bg-black mt-4">
             <div className="flex" >
-              <img src={data.handsome} alt={data.handsome} loading="lazy" width={320} />
+              <img src={data.images.handsome} alt={"handsome"} loading="lazy" width={320} />
               <h2 className="text-2xl text-white py-5">Some music</h2>
             </div>
             <iframe
