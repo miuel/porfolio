@@ -6,7 +6,7 @@
   "about": [
     {
       "title": "About",
-      "text": "I'm Miguel Rivas, a front-end developer with roots in Argentina and a heart for art and design. With my family by my side in Sweden, I pour my love for creation into building beautiful and functional websites and apps. I'm constantly learning, seeking new ways to improve and push boundaries with code. Art and design inspire me, fueling my desire to bring fresh perspectives to my work. As a family-oriented person, I also enjoy constructing educational toys for my child. My mission is to infuse each project with a unique and personal touch, showcasing my passion for technology, aesthetics, and the joy of creation."
+      "text": "I pour my love for creation into building beautiful and functional websites and apps. I'm constantly learning, seeking new ways to improve and push boundaries with code. Art and design inspire me, fueling my desire to bring fresh perspectives to my work. As a family-oriented person, I also enjoy constructing educational toys for my child. My mission is to infuse each project with a unique and personal touch, showcasing my passion for technology, aesthetics, and the joy of creation."
     }
   ],
   "processOfCreation": {
@@ -170,22 +170,22 @@
   ],
   "marqueeJobsText": [
     {
-      "text": "Front-End Developer ✚ BeeReal ✚ Argentina"
+      "text": "✚ Front-End Developer ☞ BeeReal ✚ Argentina ✚"
     },
     {
-      "text": "Front-End Developer ✚ IT Resources ✚ Argentina"
+      "text": " ✚ IT Resources ✚ Argentina ☞ "
     },
     {
-      "text": "Front-End Developer ✚ Globant ✚ Argentina"
+      "text": " ✚ Front-End Developer ✚ Globant ✚ Argentina ☞ "
     },
     {
-      "text": "Front-End Developer ✚ BeeReal ✚ Argentina"
+      "text": "☞ Front-End Developer ✚ BeeReal ✚ Argentina ☞ "
     },
     {
-      "text": "Front-End Developer ✚ IT Resources ✚ Argentina"
+      "text": " ☞ Front-End Developer ✚ IT Resources ✚ Argentina ☞ "
     },
     {
-      "text": "Front-End Developer ✚ Globant ✚ Argentina"
+      "text": " ☞ Front-End Developer ✚ Globant ✚ Argentina ☞ "
     }
   ],
   "navigation": [
@@ -224,25 +224,34 @@
       "data": "linkedin.com/in/miguelrivasin/ github.com/miuel"
     }
   ],
-  "imgMonkey": "../../assets/images/collage.png",
-  "collageAnimal": "../assets/images/collage-animal.png",
-  "grid": "../assets/images/grid.png",
-  "cv": "../assets/images/cv_en_sw.pdf",
   "cvText": "Download CV",
-  "map": "../assets/images/halmstad.png",
   "mapText": "Halmstad, Sweden",
-  "intro": "../assets/images/intro_body.gif",
-  "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
-  "walletSm": "../assets/images/projects/jobs/itr/wallet-sm.gif",
-  "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif",
-  "letters": "../assets/images/projects/personal/letters.gif",
-  "organic": "../assets/images/projects/personal/organic.mp4",
-  "press": "../assets/images/press.gif",
-  "handsome": "../assets/images/handsome.jpeg",
-  "homeMeImg": "../assets/images/home-me.jpeg",
-  "homeMeMP4": "../assets/images/home-me.mp4",
-  "fashionable": "../assets/images/fashionable.jpeg",
-  "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
-  "sverigesnationalparker": "../assets/images/projects/jobs/consid/nv/snp.png",
-  "lavinprognoser": "../assets/images/projects/jobs/consid/nv/lavin.png"
+  "images": {
+    "logo": "../assets/images/logo.png",
+    "imgMonkey": "../../assets/images/collage.png",
+    "collageAnimal": "../assets/images/collage-animal.png",
+    "grid": "../assets/images/grid.png",
+    "cv": "../assets/images/cv_en_sw.pdf",
+    "map": "../assets/images/halmstad.png",
+    "intro": "../assets/images/intro_body.gif",
+    "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
+    "walletSm": "../assets/images/projects/jobs/itr/wallet-sm.gif",
+    "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif",
+    "letters": "../assets/images/projects/personal/letters.gif",
+    "organic": "../assets/images/projects/personal/organic.mp4",
+    "headphone": "../assets/images/headphone.gif",
+    "handsome": "../assets/images/handsome.jpeg",
+    "homeMeImg": "../assets/images/home-me.jpeg",
+    "hospitalBritanico": "../assets/images/projects/jobs/itr/hospitalBritanico.gif",
+    "fashionable": "../assets/images/fashionable.jpeg",
+    "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
+    "sverigesnationalparker": "../assets/images/projects/jobs/consid/nv/snp.png",
+    "lavinprognoser": "../assets/images/projects/jobs/consid/nv/lavin.png",
+    "agrosty": "../assets/images/projects/jobs/agrosty/agrosty.png", 
+    "icons": [
+      {
+        "icon": "../assets/images/icons/angular.svg"
+      }
+    ]
+  }
 }
