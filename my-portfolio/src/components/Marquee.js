@@ -44,7 +44,7 @@ const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet,
                         {data.map((name, i) => (
                         <>
                         <Icon key={i.toString()} icon={name.icon} size={6} className="" />
-                        {showBullet && <span className="marquee__bullet text-5xl">+</span>}
+                        {/* {showBullet && <span className="marquee__bullet text-5xl">+</span>} */}
                         </>
                         ))}
                       </div>

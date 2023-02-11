@@ -1,12 +1,11 @@
 // Home Page
 import { Link } from "react-router-dom";
-import Card from "../components/Card";
 import data from "../api/data-mock.json";
 import Marquee from "../components/Marquee";
 import useScrollToTop from "../hooks/useScrollToTop";
 
 const HomePage = () => {
-useScrollToTop();
+  useScrollToTop();
   return (
     <>
       <Marquee
@@ -26,7 +25,7 @@ useScrollToTop();
             alt="home image"
             // replace this with your own image
             //src="../assets/images/member-feature_1600.jpeg"
-            src={data.images.homeMeImg}
+            src={data.images.patternpad}
           />
 
         </div>
@@ -47,23 +46,14 @@ useScrollToTop();
         </div>
       </section>
 
-      <Marquee
+      {/* <Marquee
         data={data.images.icons}
         repeatTimes={3}
-        bgColor="bg-black"
+        bgColor="bg-stone-400"
         height={"h-[200]"}
         showBullet
         isImagesMarquee
-      />
-
-      <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
-        <Card image={data.images.headphone} />
-        <Card image={data.images.imgMonkey} />
-        <Card image={data.images.collageAnimal} />
-        <Card image={data.images.grid} />
-      </section>
-
-      <span>you should talk about CREATIVE CODE + SPARK AR </span>
+      /> */}
     </>
   );
 };

@@ -1,7 +1,9 @@
 // Project Page
 import data from "../api/data-mock.json";
 import { Carousel } from "flowbite-react";
+import Card from "../components/Card";
 import useScrollToTop from "../hooks/useScrollToTop";
+
 const ProjectPage = () => {
   useScrollToTop();
   return (
@@ -60,7 +62,7 @@ const ProjectPage = () => {
             <div>
               <img
                 src={data.images.wallet}
-                className="w-auto rounded-md border-stone-400 border "
+                className="w-auto rounded-md border-stone-400 border"
                 alt="itr digita wallet"
                 loading="lazy"
               />
@@ -69,7 +71,7 @@ const ProjectPage = () => {
             <div>
               <img
                 src={data.images.hospitalBritanico}
-                className="w-auto rounded-md border-stone-400 border "
+                className="w-auto rounded-md border-stone-400 border"
                 alt="itr digita wallet"
                 loading="lazy"
               />
@@ -93,6 +95,15 @@ const ProjectPage = () => {
               Your browser does not support the video tag.
             </video>
           </div>
+
+
+          <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
+            <Card image={data.images.imgMonkey} />
+            <Card image={data.images.collageAnimal} />
+            <Card image={data.images.rembrandt} />
+          </section>
+
+          {/* sound cloud block */}
 
           <div className=" bg-black mt-4">
             <div className="flex" >
