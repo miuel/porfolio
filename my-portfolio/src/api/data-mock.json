@@ -168,26 +168,6 @@
       "text": "Keep it simple, make it stand out"
     }
   ],
-  "marqueeJobsText": [
-    {
-      "text": "✚ Front-End Developer ☞ BeeReal ✚ Argentina ✚"
-    },
-    {
-      "text": " ✚ IT Resources ✚ Argentina ☞ "
-    },
-    {
-      "text": " ✚ Front-End Developer ✚ Globant ✚ Argentina ☞ "
-    },
-    {
-      "text": "☞ Front-End Developer ✚ BeeReal ✚ Argentina ☞ "
-    },
-    {
-      "text": " ☞ Front-End Developer ✚ IT Resources ✚ Argentina ☞ "
-    },
-    {
-      "text": " ☞ Front-End Developer ✚ Globant ✚ Argentina ☞ "
-    }
-  ],
   "navigation": [
     {
       "name": "HOME",
@@ -247,10 +227,106 @@
     "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
     "sverigesnationalparker": "../assets/images/projects/jobs/consid/nv/snp.png",
     "lavinprognoser": "../assets/images/projects/jobs/consid/nv/lavin.png",
-    "agrosty": "../assets/images/projects/jobs/agrosty/agrosty.png", 
+    "agrosty": "../assets/images/projects/jobs/agrosty/agrosty.png",
     "icons": [
       {
-        "icon": "../assets/images/icons/angular.svg"
+        "icon": "angular"
+      },
+      {
+        "icon": "babel"
+      },
+      {
+        "icon": "bower"
+      },
+      {
+        "icon": "css"
+      },
+      {
+        "icon": "deno"
+      },
+      {
+        "icon": "docker"
+      },
+      {
+        "icon": "eslint"
+      },
+      {
+        "icon": "figma"
+      },
+      {
+        "icon": "firebase"
+      },
+      {
+        "icon": "flutter"
+      },
+      {
+        "icon": "github"
+      },
+      {
+        "icon": "grunt"
+      },
+      {
+        "icon": "gulp"
+      },
+      {
+        "icon": "html"
+      },
+      {
+        "icon": "javascript"
+      },
+      {
+        "icon": "jira"
+      },
+      {
+        "icon": "jquery"
+      },
+      {
+        "icon": "json"
+      },
+      {
+        "icon": "nextJs"
+      },
+      {
+        "icon": "nodejs"
+      },
+      {
+        "icon": "npm"
+      },
+      {
+        "icon": "preact"
+      },
+      {
+        "icon": "prettier"
+      },
+      {
+        "icon": "react"
+      },
+      {
+        "icon": "redux"
+      },
+      {
+        "icon": "reduxSaga"
+      },
+      {
+        "icon": "rxjs"
+      },
+      {
+        "icon": "sass"
+      },
+      {
+        "icon": "sketch"
+      },
+      {
+        "icon": "styledComponents"
+      },
+      {
+        "icon": "svelte"
+      },
+      {
+        "icon": "tailwindcss"
+      },
+      {
+        "icon": "typescript"
       }
     ]
   }

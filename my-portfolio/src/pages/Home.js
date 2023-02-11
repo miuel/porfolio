@@ -4,6 +4,7 @@ import Card from "../components/Card";
 import data from "../api/data-mock.json";
 import Marquee from "../components/Marquee";
 
+
 const HomePage = () => {
   if (window) {
     window.scrollTo(0, 0);
@@ -29,7 +30,7 @@ const HomePage = () => {
             //src="../assets/images/member-feature_1600.jpeg"
             src={data.images.homeMeImg}
           />
-          
+
         </div>
         <div className=" max-w-3xl pr-8 w-1/2">
           <h1 className="text-6xl line-height-1-6 font-bold font-bodoni py-5">
@@ -48,13 +49,13 @@ const HomePage = () => {
         </div>
       </section>
 
-    <Marquee
-        data={data.marqueeJobsText}
-        repeatTimes={1}
+      <Marquee
+        data={data.images.icons}
+        repeatTimes={3}
         bgColor="bg-black"
-        height={"h-24"}
-        fontSize={"text-4xl"}
-        showBullet={false}
+        height={"h-[200]"}
+        showBullet
+        isImagesMarquee
       />
 
       <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
