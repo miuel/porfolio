@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import Card from "../components/Card";
 import data from "../api/data-mock.json";
 import Marquee from "../components/Marquee";
-
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const HomePage = () => {
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+useScrollToTop();
   return (
     <>
       <Marquee

@@ -1,12 +1,9 @@
 // Experience Page
 import { Badge, Timeline } from "flowbite-react";
 import data from "../api/data-mock.json";
-
+import useScrollToTop from "../hooks/useScrollToTop";
 const ExperiencePage = () => {
-
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+  useScrollToTop();
 
   return (
     <section className="overflow-auto max-w-6xl m-auto">

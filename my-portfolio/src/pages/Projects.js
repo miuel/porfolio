@@ -1,11 +1,9 @@
 // Project Page
 import data from "../api/data-mock.json";
 import { Carousel } from "flowbite-react";
-
+import useScrollToTop from "../hooks/useScrollToTop";
 const ProjectPage = () => {
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+  useScrollToTop();
   return (
     <div className="overflow-auto max-w-6xl m-auto">
       <div className="p-10 gap-8">

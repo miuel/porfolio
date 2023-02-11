@@ -1,11 +1,9 @@
 // About Page
+import useScrollToTop from "../hooks/useScrollToTop";
 import data from "../api/data-mock.json";
 
 const AboutPage = () => {
-
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+  useScrollToTop();
 
   return (
     <section className="overflow-auto max-w-6xl m-auto">
