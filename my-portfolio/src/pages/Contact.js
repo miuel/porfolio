@@ -13,17 +13,23 @@ const ContactPage = () => {
           <h1>{data.contact.title}</h1>
         </div>
         <div className="w-2/3">
-          <h2 className="text-2xl text-85rgba mb-5 pb-5 border-b border-stone-400">
-            {data.contact.email}
-          </h2>
-          <h2 className="text-xl text-85rgba mb-5 pb-5 border-b border-stone-400">
-            {data.contact.phone}
-          </h2>
+          <div className="flex flex-col pb-5 border-b border-stone-400">
+            <a
+              className="text-85rgba paragraph-style mt-5"
+              href={`mailto:${data.contact.email}`}
+              aria-label="Email"
+            >
+              {data.contact.email}
+            </a>
+            <p className="text-85rgba paragraph-style mt-5">
+              {data.contact.phone}
+            </p>
+          </div>
 
-          <div className="pb-5 border-b border-stone-400">
+          <div className="pb-5 border-b border-stone-400 mt-5">
             {data.contact.media &&
               data.contact.media.map((media, i) => (
-                <Button text={media.name} link={media.url} key={i} />
+                <Button text={media.name} link={media.url} key={i}/>
               ))}
           </div>
 
@@ -43,7 +49,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-    </section>
+    </section >
   );
 };
 

@@ -25,7 +25,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
+  h1, h2 {
     letter-spacing: 3px;
     font-size: 2.2rem;
     line-height: 1.6;
@@ -40,9 +40,17 @@
     font-family: 'BodoniModa', serif;
   }
 
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
   a {
     letter-spacing: 2.5px;
     font-size: 83%;
+  }
+
+  .max-w-75 {
+   max-width: 75ch;
   }
 
   .paragraph-style {

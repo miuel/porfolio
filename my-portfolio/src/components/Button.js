@@ -3,7 +3,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = ({ text, link, className, isLink = false }) => {
+const Button = (
+    { text, link, isSelected, onClick, className, isLink = false }
+) => {
     return (
         <>
             {!isLink && (
@@ -12,12 +14,16 @@ const Button = ({ text, link, className, isLink = false }) => {
                     href={link}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={`Link to ${text}`}
                 >
                     {text}
                 </a>
             )}
             {isLink && (
-                <Link to={link} className="hover:bg-stone-400 hover:text-white px-1">
+                <Link to={link} 
+                onClick={onClick}
+                className={`hover:bg-white px-1 ${isSelected ? "bg-white" : ""}`}
+                 aria-label={`Link to ${text}`}>
                     {text}
                 </Link>
             )}

@@ -1,4 +1,5 @@
-// Project Page
+// Project Page description of this page
+// this page is a list of projects that I have worked on
 import data from "../api/data-mock.json";
 import { Carousel } from "flowbite-react";
 import Card from "../components/Card";
@@ -6,6 +7,8 @@ import useScrollToTop from "../hooks/useScrollToTop";
 
 const ProjectPage = () => {
   useScrollToTop();
+
+
   return (
     <div className="overflow-auto max-w-6xl m-auto">
       <div className="p-10 gap-8">
@@ -23,24 +26,28 @@ const ProjectPage = () => {
                 fetchpriority="high"
                 loading="lazy"
                 src={data.images.naturvardsverket}
+                // onClick={() => window.open("https://www.naturvardsverket.se/")}
                 alt="natur vards verket"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
                 src={data.images.sverigesnationalparker}
+                // onClick={() => window.open("https://www.sverigesnationalparker.se/")}
                 alt="sveriges national parker"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
                 src={data.images.lavinprognoser}
+                // onClick={() => window.open("https://www.lavinprognoser.se/")}
                 alt="lavin prognoser"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
                 src={data.images.agrosty}
+                // onClick={() => window.open("http://agrosty.com/")}
                 alt="agrosty"
               />
             </Carousel>
@@ -49,17 +56,24 @@ const ProjectPage = () => {
           <h2 className="text-2xl text-85rgba py-5">Professional</h2>
 
           <h3 className="text-xl text-85rgba py-5">Mobile</h3>
-          <div className="flex gap-3 pt-2">
-            <div>
+          <div className="grid  ">
+            <div className=" grid gap-4 grid-cols-2">
               <img
                 src={data.images.ospuncba}
                 className="w-auto"
                 alt="ospuncba"
                 loading="lazy"
               />
-              <small>mobile developer - react native</small>
+              <p>
+                mobile developer - react native
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                facilisi. Sed euismod, nisl vel tincidunt lacinia, nunc est
+                consectetur nunc, vitae aliquet nisl nisl et nisl. Nulla facilisi.
+                Sed euismod, nisl vel tincidunt lacinia, nunc est consectetur nunc,
+                vitae aliquet nisl nisl et nisl. Nulla facilisi. Sed euismod, nisl
+              </p>
             </div>
-            <div>
+            <div className="flex">
               <img
                 src={data.images.wallet}
                 className="w-auto rounded-md border-stone-400 border"
@@ -68,7 +82,7 @@ const ProjectPage = () => {
               />
               <small>mobile developer - react native</small>
             </div>
-            <div>
+            <div className="flex">
               <img
                 src={data.images.hospitalBritanico}
                 className="w-auto rounded-md border-stone-400 border"

@@ -1,7 +1,8 @@
 {
   "home": {
     "slogan": "Creating beautiful experiences, one pixel at a time",
-    "homeText": "I'm a front-end developer with 5+ years of experience. I excel in React, React Native, Vanilla JS, and SSR. I prioritize accessibility and user-friendliness in websites/apps. I have a solid track record in delivering quality results and am still always seeking to improve. I find inspiration in the intersection of technology and design, striving to make applications that serve a purpose and please users with their appearance."
+    "homeText": "I'm a front-end developer with (5+) years of experience. I excel in React, React Native, Vanilla JS, and SSR. I prioritize accessibility and user-friendliness in websites/apps. I have a solid track record in delivering quality results and am still always seeking to improve. I find inspiration in the intersection of technology and design, striving to make applications that serve a purpose and please users with their appearance.",
+    "homePresentation": "Welcome to my portfolio!. I am a talented and experienced frontend programmer with over 5 years of industry expertise. With a keen eye for design, I strive to create visually stunning and user-friendly websites and applications. Throughout my career, I have had the privilege of working with clients and companies from diverse backgrounds and across various countries. This international exposure has not only broadened my horizons but also enhanced my ability to understand and cater to different cultural preferences. Fluent in both English and Spanish, I effectively communicate and collaborate with clients and team members from around the globe. My passion for frontend development is complemented by my strong skills in HTML, CSS, and JavaScript, ensuring seamless user experiences across different devices and platforms. I am well-versed in modern frameworks and libraries such as React or Next Js, enabling me to create dynamic and interactive applications that engage users. I approach every project with creativity, attention to detail, and a focus on user-centric design principles. By carefully understanding the needs and goals of each project, I craft intuitive and visually appealing interfaces that leave a lasting impression on users. Throughout my career, I have successfully collaborated with cross-functional teams, including designers, backend developers, and project managers, to create cohesive and impactful digital solutions. I thrive in fast-paced environments and am adept at meeting deadlines while maintaining the highest standards of quality. In my portfolio, you will find a collection of my past projects that highlight my expertise in frontend development and design. Each project demonstrates my ability to transform ideas into reality while incorporating the latest industry trends and best practices. Thank you for visiting my portfolio. I am excited to embark on new opportunities, collaborate on innovative projects, and bring exceptional digital experiences to life. Let's connect and create something remarkable together!."
   },
   "about": [
     {
@@ -222,11 +223,12 @@
     "organic": "../assets/images/projects/personal/organic.mp4",
     "headphone": "../assets/images/headphone.gif",
     "handsome": "../assets/images/handsome.jpeg",
-    "homeMeImg": "../assets/images/home-me.jpeg",
+    "me": "../assets/images/me.png",
     "hospitalBritanico": "../assets/images/projects/jobs/itr/hospitalBritanico.gif",
     "fashionable": "../assets/images/fashionable.jpeg",
     "MR2B": "../assets/images/MR2B.png",
     "patternpad": "../assets/images/patternpad.svg",
+    "jag": "../assets/images/home.jpeg",
     "patternpadMarquee": "../assets/images/patternpadMarquee.svg",
     "rembrandt": "../assets/images/rembrandt.png",
     "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
