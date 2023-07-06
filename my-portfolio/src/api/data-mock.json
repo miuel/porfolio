@@ -6,12 +6,31 @@
     "text": "<p class='mb-4'>Welcome to my portfolio! I am a talented and experienced frontend programmer with over 5 years of industry expertise. With a keen eye for design, I strive to create visually stunning and user-friendly websites and applications.</p><p class='mb-4'>Throughout my career, I have had the privilege of working with clients and companies from diverse backgrounds and across various countries. This international exposure has not only broadened my horizons but also enhanced my ability to understand and cater to different cultural preferences.</p><p class='mb-4'>Fluent in both English and Spanish, I effectively communicate and collaborate with clients and team members from around the globe. My passion for frontend development is complemented by my strong skills in HTML, CSS, and JavaScript, ensuring seamless user experiences across different devices and platforms.</p><p class='mb-4'>I am well-versed in modern frameworks and libraries such as React or Next Js, enabling me to create dynamic and interactive applications that engage users.</p><p class='mb-4'>I approach every project with creativity, attention to detail, and a focus on user-centric design principles. By carefully understanding the needs and goals of each project, I craft intuitive and visually appealing interfaces that leave a lasting impression on users.</p><p class='mb-4'>Throughout my career, I have successfully collaborated with cross-functional teams, including designers, backend developers, and project managers, to create cohesive and impactful digital solutions. I thrive in fast-paced environments and am adept at meeting deadlines while maintaining the highest standards of quality.</p><p class='mb-4'>In my portfolio, you will find a collection of my past projects that highlight my expertise in frontend development and design. Each project demonstrates my ability to transform ideas into reality while incorporating the latest industry trends and best practices.</p><p class='mb-4'>Thank you for visiting my portfolio. I am excited to embark on new opportunities, collaborate on innovative projects, and bring exceptional digital experiences to life. Let's connect and create something remarkable together!</p>",
     "author": "Miguel Angel Rivas"
   },
-  "service": [
-    {
-      "title": "Service",
-      "text": "I pour my love for creation into building beautiful and functional websites and apps. I'm constantly learning, seeking new ways to improve and push boundaries with code. Art and design inspire me, fueling my desire to bring fresh perspectives to my work. As a family-oriented person, I also enjoy constructing educational toys for my child. My mission is to infuse each project with a unique and personal touch, showcasing my passion for technology, aesthetics, and the joy of creation."
-    }
-  ],
+  "services": {
+    "process": [
+      {
+        "title": "Web Development",
+        "description": "I go beyond just coding websites; I create immersive online experiences. My talent combines technical prowess with artistic sensibilities to design visually striking websites. I ensure that your site not only looks exceptional but also functions flawlessly across different devices and browsers."
+      },
+      {
+        "title": "App Development",
+        "description": "In the fast-paced world of mobile technology, having a powerful app is crucial for success. I bring your ideas to life, developing intuitive and engaging mobile applications for iOS and Android platforms. I prioritize user experience, ensuring that your app is easy to navigate, visually appealing, and optimized for performance."
+      },
+      {
+        "title": "Aesthetics",
+        "description": "I understand the importance of visual appeal in leaving a lasting impression. I carefully craft user interfaces that are not only visually stunning but also align with your brand identity. I pay attention to every detail, ensuring that your website or app stands out from the competition."
+      },
+      {
+        "title": "Semantics",
+        "description": "Behind every great digital experience lies a solid foundation of clean and semantic code. I adhere to industry best practices and use the latest technologies to ensure that your website or app is well-structured, search engine-friendly, and easily maintainable."
+      },
+      {
+        "title": "Accessibility",
+        "description": "I believe in inclusivity, which is why I prioritize accessibility in the development process. I ensure that your website or app meets accessibility standards, making it usable for people with disabilities. By incorporating accessibility features, I help you reach a wider audience and demonstrate your commitment to inclusivity."
+      }
+    ],
+    "contact": "Contact me today to embark on a journey of digital excellence!"
+  },
   "processOfCreation": {
     "heading": "Services",
     "service": "Committed to delivering top-notch frontend development services rooted in brand-centric design thinking",
@@ -153,7 +172,7 @@
     ]
   },
   "notFound": {
-    "text": "Oops!... Page Not Found. Error 404",
+    "text": "Page Not Found. Error 404",
     "button": "Go Home"
   },
   "marqueeHeaderText": [
@@ -182,8 +201,8 @@
       "url": "/"
     },
     {
-      "name": "SERVICE",
-      "url": "/service"
+      "name": "SERVICES",
+      "url": "/services"
     },
     {
       "name": "EXPERIENCE",

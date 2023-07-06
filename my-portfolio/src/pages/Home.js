@@ -8,15 +8,6 @@ const HomePage = () => {
   useScrollToTop();
   return (
     <>
-     {/*  <Marquee
-        data={data.marqueeHeaderText}
-        repeatTimes={3}
-        bgColor="bg-stone-400"
-        height={"h-14"}
-        fontSize={"text-2xl"}
-        showBullet={true}
-      /> */}
-
       <section className="relative flex gap-8 m-0 home-section-h pb-8">
         {/* <div className="w-1/2 p-12 flex items-start justify-center">
           <img
@@ -45,6 +36,7 @@ const HomePage = () => {
           <Link
             className="justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
             to="/contact"
+            aria-label="Contact us"
           >
             Let's talk{" "}
           </Link>
