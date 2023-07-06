@@ -2,7 +2,7 @@
 import useScrollToTop from "../hooks/useScrollToTop";
 import data from "../api/data-mock.json";
 
-const AboutPage = () => {
+const ServicePage = () => {
   useScrollToTop();
 
   return (
@@ -18,7 +18,7 @@ const AboutPage = () => {
                 <h1 aria-label="about-title"
                 >{about.title}</h1>
 
-                <div className="icon bg-stone-300 rounded-full shadow-md">
+                <div className="icon neumorphism-coin">
                   <img loading="lazy" src={data.images.logo} alt="miguel logo" />
                 </div>
               </div>
@@ -55,4 +55,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ServicePage;

@@ -33,15 +33,14 @@ const HomePage = () => {
           <h1 className="text-6xl font-bold font-bodoni py-5">
             {data.home.slogan}
           </h1>
-          <h2 className="text-4xl font-bold font-bodoni py-5">
+          <h2 className="text-9xl font-bold font-bodoni py-5 text-end">
             <i>
               <span className="text-sm">by</span>
             </i>{" "}
-            Miguel Angel Rivas
+            {data.home.author}
           </h2>
-          <p className="break-words paragraph-style mb-12">
-            {data.home.homePresentation}
-          </p>
+          <div className="break-words paragraph-style mb-12"
+           dangerouslySetInnerHTML={{ __html: data.home.text }} />
 
           <Link
             className="justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
