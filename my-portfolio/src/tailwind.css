@@ -5,7 +5,7 @@
 
 :root {
   --marquee-width: -4000px;
-  --following-width: -300px;
+  --icons-width: -7000px;
 }
 
 @layer base {
@@ -25,11 +25,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1 {
+  h1,
+  h2 {
     letter-spacing: 3px;
     font-size: 2.2rem;
     line-height: 1.6;
-    color: rgba(0, 0, 0, 0.75);
+    
   }
 
   h1,
@@ -38,11 +39,23 @@
   h4,
   p {
     font-family: 'BodoniModa', serif;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
   }
 
   a {
     letter-spacing: 2.5px;
     font-size: 83%;
+  }
+
+  .max-w-75 {
+    max-width: 75ch;
   }
 
   .paragraph-style {
@@ -70,11 +83,131 @@
     height: calc(100% - 200px);
   }
 
+  /** Card styles */
+
+  .myCard {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+  }
+
+  .frontSide,
+  .frontSide::before {
+    background: #e0e0e0;
+    box-shadow: 24px 24px 47px #bebebe,
+      -24px -24px 47px #ffffff;
+  }
+
+  .backSide,
+  .backSide::before {
+    background: #e0e0e0;
+    box-shadow: 24px 24px 47px #bebebe,
+      -24px -24px 47px #ffffff;
+  }
+
+  .backSide {
+    transform: rotateY(180deg);
+  }
+
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+
+    80% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  .neumorphism-card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #ffffff;
+  }
+
+  .neumorphism-coin {
+    border-radius: 50%;
+    background: #e0e0e0;
+    box-shadow: 24px 24px 47px #bebebe,
+      -24px -24px 47px #ffffff;
+  }
+
+  .card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+      -15px -15px 30px #ffffff;
+  }
+
   /* marquee */
- 
+
   .marquee--is-animating .marquee__inner {
-    -webkit-animation-name: scrollHorizontal;
-    animation-name: scrollHorizontal;
+    -webkit-animation-name: scrollHorizontalMarquee;
+    animation-name: scrollHorizontalMarquee;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-duration: 20000ms;
@@ -83,7 +216,7 @@
     animation-timing-function: linear;
   }
 
-  @keyframes scrollHorizontal {
+  @keyframes scrollHorizontalMarquee {
     0% {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
@@ -96,6 +229,41 @@
   }
 
   .marquee__inner {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .marquee--is-animating .marquee__inner__icons {
+    -webkit-animation-name: scrollHorizontalIcons;
+    animation-name: scrollHorizontalIcons;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 40000ms;
+    animation-duration: 40000ms;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  }
+
+  @keyframes scrollHorizontalIcons {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(var(--icons-width), 0, 0);
+      transform: translate3d(var(--icons-width), 0, 0);
+    }
+  }
+
+  .marquee__inner__icons {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
@@ -135,7 +303,7 @@
   .icon {
     width: 150px;
     height: 150px;
-    @apply block overflow-hidden transform duration-500 ease-in-out mt-4; 
+    @apply block overflow-hidden transform duration-500 ease-in-out mt-4;
   }
 
   .icon img {
@@ -152,14 +320,73 @@
     @apply shadow-lg;
   }
 
-  .h-600{
+  .coin {
+    font-size: 110px;
+    width: 0.1em;
+    height: 1em;
+    background: linear-gradient(#ffffff, #bebebe);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: rotate_4001510 7s infinite linear;
+    transform-style: preserve-3d;
+  }
+  
+  .coin .side, .coin:before, .coin:after {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    border-radius: 50%;
+    right: -0.4em;
+    text-align: center;
+    line-height: 1;
+    transform: rotateY(-90deg);
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+
+  /** Coin styles */
+  
+  .coin .tails, .coin:after {
+    left: -0.4em;
+    transform: rotateY(90deg);
+  }
+  
+  .coin:before, .coin:after {
+    background: linear-gradient(#ffffff, #bebebe);
+    backface-visibility: hidden;
+    transform: rotateY(90deg);
+  }
+  
+  .coin:after {
+    transform: rotateY(-90deg);
+  }
+  
+  @keyframes rotate_4001510 {
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .img_back {
+    transform: scaleX(-1);
+  }
+  
+
+  .h-600 {
     height: 600px !important;
   }
 
   .grid-col-custom {
     @apply grid gap-5;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr) );
-    
-  }  
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+
+  }
 
 }

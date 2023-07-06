@@ -1,12 +1,10 @@
 // Experience Page
 import { Badge, Timeline } from "flowbite-react";
 import data from "../api/data-mock.json";
-
+import Button from "../components/Button";
+import useScrollToTop from "../hooks/useScrollToTop";
 const ExperiencePage = () => {
-
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+  useScrollToTop();
 
   return (
     <section className="overflow-auto max-w-6xl m-auto">
@@ -51,7 +49,7 @@ const ExperiencePage = () => {
               ))}
           </Timeline>
           <a
-            className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+            className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400 cursor-pointer"
             href={data.cv}
             download
           >

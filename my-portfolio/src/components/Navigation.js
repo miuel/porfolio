@@ -1,19 +1,25 @@
 // Navigation component
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import data from "../api/data-mock.json";
+import Button from "./Button";
 
-const Navigation = () => {  
+const Navigation = () => {
+  const location = useLocation();
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  useEffect(() => {
+    setSelectedOption(location.pathname);
+  }, [location]);
+
   return (
-    <nav className="p-4 bg-white sticky top-0 gap-8 flex text-sm font-normal leading-loose z-10">
+    <nav className="p-4 bg-orange-400 sticky top-0 gap-8 flex text-sm font-normal leading-loose z-10">
       {data.navigation.map((option) => (
-        <Link
-          to={option.url}
-          className="hover:bg-stone-400 hover:text-white px-1"
-          key={option.name}
-        >
-          {option.name}
-        </Link>
+        <Button text={option.name} link={option.url} isLink={true}
+          isSelected={option.url === selectedOption}
+          onClick={() => setSelectedOption(option.url)}
+
+        />
       ))}
     </nav>
   );

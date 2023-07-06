@@ -1,11 +1,14 @@
-// Project Page
+// Project Page description of this page
+// this page is a list of projects that I have worked on
 import data from "../api/data-mock.json";
 import { Carousel } from "flowbite-react";
+import Card from "../components/Card";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const ProjectPage = () => {
-  if (window) {
-    window.scrollTo(0, 0);
-  }
+  useScrollToTop();
+
+
   return (
     <div className="overflow-auto max-w-6xl m-auto">
       <div className="p-10 gap-8">
@@ -22,20 +25,30 @@ const ProjectPage = () => {
               <img
                 fetchpriority="high"
                 loading="lazy"
-                src={data.naturvardsverket}
-                alt={data.naturvardsverket}
+                src={data.images.naturvardsverket}
+                // onClick={() => window.open("https://www.naturvardsverket.se/")}
+                alt="natur vards verket"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
-                src={data.sverigesnationalparker}
-                alt="..."
+                src={data.images.sverigesnationalparker}
+                // onClick={() => window.open("https://www.sverigesnationalparker.se/")}
+                alt="sveriges national parker"
               />
               <img
                 fetchpriority="low"
                 loading="lazy"
-                src={data.lavinprognoser}
-                alt="..."
+                src={data.images.lavinprognoser}
+                // onClick={() => window.open("https://www.lavinprognoser.se/")}
+                alt="lavin prognoser"
+              />
+              <img
+                fetchpriority="low"
+                loading="lazy"
+                src={data.images.agrosty}
+                // onClick={() => window.open("http://agrosty.com/")}
+                alt="agrosty"
               />
             </Carousel>
           </div>
@@ -43,24 +56,40 @@ const ProjectPage = () => {
           <h2 className="text-2xl text-85rgba py-5">Professional</h2>
 
           <h3 className="text-xl text-85rgba py-5">Mobile</h3>
-          <div className="grid-col-custom">
-            <div>
+          <div className="grid  ">
+            <div className=" grid gap-4 grid-cols-2">
               <img
-                src={data.ospuncba}
+                src={data.images.ospuncba}
                 className="w-auto"
-                alt=""
+                alt="ospuncba"
+                loading="lazy"
+              />
+              <p>
+                mobile developer - react native
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                facilisi. Sed euismod, nisl vel tincidunt lacinia, nunc est
+                consectetur nunc, vitae aliquet nisl nisl et nisl. Nulla facilisi.
+                Sed euismod, nisl vel tincidunt lacinia, nunc est consectetur nunc,
+                vitae aliquet nisl nisl et nisl. Nulla facilisi. Sed euismod, nisl
+              </p>
+            </div>
+            <div className="flex">
+              <img
+                src={data.images.wallet}
+                className="w-auto rounded-md border-stone-400 border"
+                alt="itr digita wallet"
                 loading="lazy"
               />
               <small>mobile developer - react native</small>
             </div>
-            <div>
+            <div className="flex">
               <img
-                src={data.wallet}
-                className="w-auto rounded-md border-stone-400 border "
-                alt=""
+                src={data.images.hospitalBritanico}
+                className="w-auto rounded-md border-stone-400 border"
+                alt="itr digita wallet"
                 loading="lazy"
               />
-              <small>mobile developer - react native</small>
+              <small>mobile developer - react + phonegap </small>
             </div>
           </div>
         </section>
@@ -68,21 +97,31 @@ const ProjectPage = () => {
         <section>
           <h2 className="text-2xl text-85rgba py-5">Personal</h2>
           <div className="grid-col-custom">
+            <img src={data.images.headphone} loading="lazy" />
             <img
-              src={data.letters}
+              src={data.images.letters}
               className="w-auto max-w-lg"
-              alt={data.letters}
+              alt="letters colors"
               loading="lazy"
             />
             <video loop autoPlay={true} controls>
-              <source src={data.organic} type="video/mp4" />
+              <source src={data.images.organic} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
 
+
+          <section className="mt-4 p-5 flex gap-8 m-0 home-section-h">
+            <Card image={data.images.imgMonkey} />
+            <Card image={data.images.collageAnimal} />
+            <Card image={data.images.rembrandt} />
+          </section>
+
+          {/* sound cloud block */}
+
           <div className=" bg-black mt-4">
             <div className="flex" >
-              <img src={data.handsome} alt={data.handsome} loading="lazy" width={320} />
+              <img src={data.images.handsome} alt={"handsome"} loading="lazy" width={320} />
               <h2 className="text-2xl text-white py-5">Some music</h2>
             </div>
             <iframe
