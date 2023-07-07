@@ -16,9 +16,9 @@ const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet,
               arrRepeatTimes.map(
                 (item, index) =>
                   index <= repeatTimes && (
-                    <div className="marquee__groups">
+                    <div className="marquee__groups" key={index.toString()}>
                       <div className={`marquee__group font-mono letter-spacing-sm ${fontSize}`}>
-                        {data.map((marquee) => {
+                        {data.map((marquee, i) => {
                           return <>
                             <span className="uppercase">{marquee.text}</span>
                             {showBullet && <span className="marquee__bullet">•</span>}

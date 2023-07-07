@@ -13,14 +13,18 @@ const Navigation = () => {
   }, [location]);
 
   return (
-    <nav className="p-4 bg-orange-400 sticky top-0 gap-8 flex text-sm font-normal leading-loose z-10">
-      {data.navigation.map((option) => (
-        <Button text={option.name} link={option.url} isLink={true}
-          isSelected={option.url === selectedOption}
-          onClick={() => setSelectedOption(option.url)}
-
-        />
-      ))}
+    <nav className="p-4 bg-orange-400 sticky top-0 flex text-sm font-normal leading-loose z-10">
+      <div className="flex gap-8 flex-wrap justify-start md:justify-start">
+        {data.navigation.map((option, index) => (
+          <Button
+            key={index.toString()}
+            aria-label={option.name}
+            text={option.name} link={option.url} isLink={true}
+            isSelected={option.url === selectedOption}
+            onClick={() => setSelectedOption(option.url)}
+          />
+        ))}
+      </div>
     </nav>
   );
 };

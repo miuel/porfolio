@@ -7,14 +7,13 @@ const ExperiencePage = () => {
   useScrollToTop();
 
   return (
-    <section className="overflow-auto max-w-6xl m-auto">
-      
-      <article className="flex p-10 gap-8">
-        <div className="w-1/3">
+    <section className="overflow-auto max-w-6xl m-auto">      
+      <article className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
+        <div className="w-full md:w-1/3">
           <h1>{data.experience.title}</h1>
         </div>
 
-        <div className="w-2/3">
+        <div className="w-full md:w-2/3">
           <Timeline>
             {data.experience &&
               data.experience.jobs.map((job, index) => (

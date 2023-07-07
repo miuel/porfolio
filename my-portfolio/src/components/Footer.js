@@ -6,7 +6,7 @@ import Marquee from "../components/Marquee";
 const Footer = () => {
 
   return (
-    <footer className="w-full pt-10 gap-8">
+    <footer className="w-full pt-20 gap-8">
       <Marquee
         data={data.marqueeHeaderText}
         repeatTimes={3}

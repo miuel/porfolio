@@ -8,11 +8,11 @@ const ContactPage = () => {
 
   return (
     <section className="overflow-auto max-w-6xl m-auto">
-      <div className="flex p-10 gap-8">
-        <div className="w-1/3">
+      <div className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
+      <div className="w-full md:w-1/3">
           <h1>{data.contact.title}</h1>
         </div>
-        <div className="w-2/3">
+        <div className="w-full md:w-2/3">
           <div className="flex flex-col pb-5 border-b border-stone-400">
             <a
               className="text-85rgba paragraph-style mt-5"
