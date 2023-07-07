@@ -219,20 +219,17 @@
   ],
   "footer": [
     {
-      "title": "info",
-      "data": "Miguel Rivas Frontend Developer Halmstad, Sweden"
+      "text": "contact >>> rivasmig@gmail.com >>> +46 072 44 37 587 >>> Oskaström, Sweden"
     },
     {
-      "title": "contact",
-      "data": "rivasmig@gmail.com +46 072 44 37 587"
+      "text": "social >>> linkedin.com/in/miguelrivasin/ >>> github.com/miuel"
     },
     {
-      "title": "social",
-      "data": "linkedin.com/in/miguelrivasin/ github.com/miuel"
+      "text": "2023"
     }
   ],
   "cvText": "Download CV",
-  "mapText": "Halmstad, Sweden",
+  "mapText": "Oskaström, Sweden",
   "images": {
     "logo": "../assets/images/logo.png",
     "imgMonkey": "../../assets/images/collage.png",
