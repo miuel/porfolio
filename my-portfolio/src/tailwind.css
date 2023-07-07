@@ -5,7 +5,7 @@
 
 :root {
   --marquee-width: -4000px;
-  --icons-width: -7000px;
+  --icons-width: -4000px;
 }
 
 @layer base {
