@@ -203,7 +203,7 @@
       -15px -15px 30px #ffffff;
   }
 
-  /* marquee */
+  /** Marquee Styles */
 
   .marquee--is-animating .marquee__inner {
     -webkit-animation-name: scrollHorizontalMarquee;

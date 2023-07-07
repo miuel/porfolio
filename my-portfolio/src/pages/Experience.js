@@ -49,7 +49,7 @@ const ExperiencePage = () => {
           </Timeline>
           <a
             className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400 cursor-pointer"
-            href={data.cv}
+            href={data.images.cv}
             download
           >
             {data.cvText}
