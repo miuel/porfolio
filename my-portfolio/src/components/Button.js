@@ -22,7 +22,7 @@ const Button = (
             {isLink && (
                 <Link to={link} 
                 onClick={onClick}
-                className={`hover:bg-white px-1 ${isSelected ? "bg-white" : ""}`}
+                className={`${className} hover:bg-white px-1 ${isSelected ? "bg-white" : ""}`}
                  aria-label={`Link to ${text}`}>
                     {text}
                 </Link>

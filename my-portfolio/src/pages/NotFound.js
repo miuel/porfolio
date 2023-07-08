@@ -12,14 +12,6 @@ const NotFoundPage = () => (
             {data.notFound.text}
 
         </h1>
-        <img
-            loading="lazy"
-            className="h-[250px] object-contain absolute opacity-50 left-2/4"
-            alt="home image"
-            // replace this with your own image
-            src={data.images.me}
-        />
-
         <Link
             className=" w-28 bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
             to="/">{data.notFound.button}</Link>

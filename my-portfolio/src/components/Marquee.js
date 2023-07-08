@@ -39,7 +39,7 @@ const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet,
               (item, index) =>
                 index <= repeatTimes && (
                   <div className="marquee__groups">
-                    <div className={`marquee__group font-mono letter-spacing-sm`}>
+                    <div className={`marquee__group font-bodoni text-base font-bold letter-spacing-sm`}>
                       <div className="flex w-[3000px] items-center justify-around">
                         {data.map((marquee, i) => (
                           <>

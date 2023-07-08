@@ -20,9 +20,11 @@ const getSize = (size) => {
         case 5:
             return 'w-12 h-12';
         case 6:
-            return 'w-16 h-16';
+            return 'w-14 h-14';
         case 7:
-            return 'w-22 h-22';
+            return 'w-16 h-16';
+        case 8:
+            return 'w-18 h-18';
         case 99:
             return 'w-3 h-3';
         case 77:
@@ -47,6 +49,7 @@ const Icon = ({
         <IconSvg
             //width={}
             height={height}
+            fill={color}
             className={`inline-block fill-current ${className} ${getSize(size)}`}
         />
     );

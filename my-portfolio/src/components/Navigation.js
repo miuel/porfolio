@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import data from "../api/data-mock.json";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const location = useLocation();
@@ -13,18 +14,25 @@ const Navigation = () => {
   }, [location]);
 
   return (
-    <nav className="p-4 bg-orange-400 sticky top-0 flex text-sm font-normal leading-loose z-10">
-      <div className="flex gap-8 flex-wrap justify-start md:justify-start">
-        {data.navigation.map((option, index) => (
-          <Button
-            key={index.toString()}
-            aria-label={option.name}
-            text={option.name} link={option.url} isLink={true}
-            isSelected={option.url === selectedOption}
-            onClick={() => setSelectedOption(option.url)}
-          />
-        ))}
+    <nav className="p-4 bg-orange-400 sticky top-0 z-10 md:mb-20">
+      <div className="overflow-auto max-w-6xl m-auto flex justify-center items-center">
+        <Link to="/">
+          <img src={data.images.logoMR} alt="logo" className="w-36 md:w-28" />          
+        </Link>
+        <div className="w-full flex gap-8 flex-wrap  justify-end items-center md:justify-end pr-0 md:pr-8">
+          {data.navigation.map((option, index) => (
+            <Button
+              key={index.toString()}
+              aria-label={option.name}
+              className={"text-sm"}
+              text={option.name} link={option.url} isLink={true}
+              isSelected={option.url === selectedOption}
+              onClick={() => setSelectedOption(option.url)}
+            />
+          ))}
+        </div>
       </div>
+
     </nav>
   );
 };

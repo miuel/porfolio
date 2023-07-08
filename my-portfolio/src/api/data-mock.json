@@ -30,7 +30,7 @@
     ]
   },
   "processOfCreation": {
-    "heading": "Services",
+    "heading": "MR",
     "service": "Empowering Brands Through Stunning Web Experiences",
     "process": [
       {
@@ -195,10 +195,6 @@
   ],
   "navigation": [
     {
-      "name": "HOME",
-      "url": "/"
-    },
-    {
       "name": "SERVICES",
       "url": "/services"
     },
@@ -245,6 +241,7 @@
   "mapText": "Oskaström, Sweden",
   "images": {
     "logo": "../assets/images/logo.png",
+    "logoMR": "../assets/images/logoMR.png",
     "imgMonkey": "../../assets/images/collage.png",
     "collageAnimal": "../assets/images/collage-animal.png",
     "grid": "../assets/images/grid.png",

@@ -31,6 +31,7 @@ import { ReactComponent as styledComponents } from "./styledComponents.svg";
 import { ReactComponent as svelte } from "./svelte.svg";
 import { ReactComponent as tailwindcss } from "./tailwindcss.svg";
 import { ReactComponent as typescript } from "./typescript.svg";
+import { ReactComponent as logoMR } from "./logoMR.svg";
 
 export default {
     angular,
@@ -66,6 +67,7 @@ export default {
     svelte,
     tailwindcss,
     typescript,
+    logoMR
 }
 
 

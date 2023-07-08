@@ -15,13 +15,13 @@ const ContactPage = () => {
         <div className="w-full md:w-2/3">
           <div className="flex flex-col pb-5 border-b border-stone-400">
             <a
-              className="text-85rgba paragraph-style mt-5"
+              className="text-85rgba paragraph-style mt-5 font-bodoni"
               href={`mailto:${data.contact.email}`}
               aria-label="Email"
             >
               {data.contact.email}
             </a>
-            <p className="text-85rgba paragraph-style mt-5">
+            <p className="text-85rgba paragraph-style mt-5 font-bodoni">
               {data.contact.phone}
             </p>
           </div>
