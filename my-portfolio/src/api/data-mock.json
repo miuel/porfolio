@@ -145,7 +145,79 @@
   "projects": {
     "title": "Projects",
     "header": "The process of creating a project involves identifying the goal and scope, gathering resources and assembling a team, developing a plan, and regularly assessing progress. Once the project is completed, it is important to reflect on the process and evaluate its success. This includes reviewing what worked well, what could have been done differently, and what can be learned from the experience. In conclusion, if you'd like to work together to build a solid process for your project, I'm here to help. Let's chat!",
-    "description": "Welcome to my Projects section! Here, you'll find a collection of the work that I'm most proud of and that best showcases my skills and experience. On this page, you'll find a variety of projects that I've worked on, including web development projects, data analysis projects, and software engineering projects. Each project includes a brief description, screenshots, and a link to view or interact with the project. I've chosen to include projects that demonstrate my technical skills, as well as my ability to work on a team and think creatively. You'll see how I've tackled real-world problems and delivered solutions that were both functional and visually appealing. I hope that you'll find my projects to be informative and interesting."
+    "description": "Here, you'll find a collection of the work that I'm most proud of and that best showcases my skills and experience. On this page, you'll find a variety of projects that I've worked on, including web development projects, data analysis projects, and software engineering projects. Each project includes a brief description, screenshots, and a link to view or interact with the project. I've chosen to include projects that demonstrate my technical skills, as well as my ability to work on a team and think creatively. You'll see how I've tackled real-world problems and delivered solutions that were both functional and visually appealing. I hope that you'll find my projects to be informative and interesting.",
+    "items": [
+      {
+        "heading": "NATUR VÅRDS VERKET",
+        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "id": "nvv",
+        "url": "www.naturvardsverket.se/",
+        "text": "Web Development",
+        "image": "/assets/images/projects/jobs/consid/nv/nv.png",
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind",
+          "Storybook",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "2023"
+        ]
+      },
+      {
+        "heading": "LAVIN prognoser",
+        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "id": "lavin",
+        "url": "www.lavinprognoser.se/",
+        "text": "Web Development",
+        "image": "/assets/images/projects/jobs/consid/nv/lavin.png",
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind",
+          "Storybook",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "heading": "Sveriges national parker",
+        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "id": "snp",
+        "url": "www.sverigesnationalparker.se/",
+        "text": "Web Development",
+        "image": "/assets/images/projects/jobs/consid/nv/snp.png",
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind",
+          "Storybook",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "2023"
+        ]
+      },
+      {
+        "heading": "NATUR VÅRDS VERKET",
+        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "id": "hej-albert",
+        "url": "www.naturvardsverket.se/",
+        "text": "Web Development",
+        "image": "/assets/images/projects/jobs/consid/nv/nv.png",
+        "tech": [
+          "React",
+          "Next.js",
+          "Tailwind",
+          "Storybook",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ]
   },
   "contact": {
     "title": "Contact",
@@ -216,10 +288,10 @@
       "text": "rivasmig@gmail.com"
     },
     {
-      "text" : "+46 072 44 37 587"
+      "text": "+46 072 44 37 587"
     },
     {
-      "text" : "Oskaström, Sweden"
+      "text": "Oskaström, Sweden"
     },
     {
       "text": "linkedin.com/in/miguelrivasin/"
@@ -249,33 +321,34 @@
   "cvText": "Download CV",
   "mapText": "Oskaström, Sweden",
   "images": {
-    "logo": "/portfolio/assets/images/logo.png",
-    "logoMR": "/portfolio/assets/images/logoMR.png",
-    "imgMonkey": "/portfolio/assets/images/collage.png",
-    "collageAnimal": "/portfolio/assets/images/collage-animal.png",
-    "grid": "/portfolio/assets/images/grid.png",
-    "cv": "/portfolio/assets/images/cv_en_sw.pdf",
-    "map": "/portfolio/assets/images/halmstad.png",
-    "intro": "/portfolio/assets/images/intro_body.gif",
-    "wallet": "/portfolio/assets/images/projects/jobs/itr/wallet.gif",
-    "walletSm": "/portfolio/assets/images/projects/jobs/itr/wallet-sm.gif",
-    "ospuncba": "/portfolio/assets/images/projects/jobs/beereal/ospuncba.gif",
-    "letters": "/portfolio/assets/images/projects/personal/letters.gif",
-    "organic": "/portfolio/assets/images/projects/personal/organic.mp4",
-    "headphone": "/portfolio/assets/images/headphone.gif",
-    "handsome": "/portfolio/assets/images/handsome.jpeg",
-    "me": "/portfolio/assets/images/me.png",
-    "hospitalBritanico": "/portfolio/assets/images/projects/jobs/itr/hospitalBritanico.gif",
-    "fashionable": "/portfolio/assets/images/fashionable.jpeg",
-    "MR2B": "/portfolio/assets/images/MR2B.png",
-    "patternpad": "/portfolio/assets/images/patternpad.svg",
-    "jag": "/portfolio/assets/images/home.jpeg",
-    "patternpadMarquee": "/portfolio/assets/images/patternpadMarquee.svg",
-    "rembrandt": "/portfolio/assets/images/rembrandt.png",
-    "naturvardsverket": "/portfolio/assets/images/projects/jobs/consid/nv/nv.png",
-    "sverigesnationalparker": "/portfolio/assets/images/projects/jobs/consid/nv/snp.png",
-    "lavinprognoser": "/portfolio/assets/images/projects/jobs/consid/nv/lavin.png",
-    "agrosty": "/portfolio/assets/images/projects/jobs/agrosty/agrosty.png",
+    "logo": "/assets/images/logo.png",
+    "logoMR": "/assets/images/logoMR.png",
+    "imgMonkey": "/assets/images/collage.png",
+    "collageAnimal": "/assets/images/collage-animal.png",
+    "grid": "/assets/images/grid.png",
+    "cv": "/assets/images/cv_en_sw.pdf",
+    "map": "/assets/images/halmstad.png",
+    "intro": "/assets/images/intro_body.gif",
+    "wallet": "/assets/images/projects/jobs/itr/wallet.gif",
+    "walletSm": "/assets/images/projects/jobs/itr/wallet-sm.gif",
+    "ospuncba": "/assets/images/projects/jobs/beereal/ospuncba.gif",
+    "letters": "/assets/images/projects/personal/letters.gif",
+    "organic": "/assets/images/projects/personal/organic.mp4",
+    "headphone": "/assets/images/headphone.gif",
+    "handsome": "/assets/images/handsome.jpeg",
+    "me": "/assets/images/me.png",
+    "hospitalBritanico": "/assets/images/projects/jobs/itr/hospitalBritanico.gif",
+    "fashionable": "/assets/images/fashionable.jpeg",
+    "MR2B": "/assets/images/MR2B.png",
+    "patternpad": "/assets/images/patternpad.svg",
+    "jag": "/assets/images/home.jpeg",
+    "patternpadMarquee": "/assets/images/patternpadMarquee.svg",
+    "rembrandt": "/assets/images/rembrandt.png",
+    "naturvardsverket": "/assets/images/projects/jobs/consid/nv/nv.png",
+    "sverigesnationalparker": "/assets/images/projects/jobs/consid/nv/snp.png",
+    "lavinprognoser": "/assets/images/projects/jobs/consid/nv/lavin.png",
+    "agrosty": "/assets/images/projects/jobs/agrosty/agrosty.png",
+    "gridProject": "/assets/images/projects/grid_project.jpg",
     "icons": [
       {
         "icon": "angular"
