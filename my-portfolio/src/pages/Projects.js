@@ -7,7 +7,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 
 const ProjectPage = () => {
   useScrollToTop();
-
+  //const imageSrc = process.env.PUBLIC_URL;
 
   return (
     <div className="overflow-auto max-w-6xl m-auto">
@@ -119,7 +119,7 @@ const ProjectPage = () => {
 
           {/* sound cloud block */}
 
-          <div className=" bg-black mt-4">
+          {/* <div className=" bg-black mt-4">
             <div className="flex" >
               <img src={data.images.handsome} alt={"handsome"} loading="lazy" width={320} />
               <h2 className="text-2xl text-white py-5">Some music</h2>
@@ -164,7 +164,7 @@ const ProjectPage = () => {
                 office break
               </a>
             </div>
-          </div>
+          </div> */}
         </section>
       </div>
     </div>

@@ -1,7 +1,6 @@
 // Experience Page
 import { Badge, Timeline } from "flowbite-react";
 import data from "../api/data-mock.json";
-import Button from "../components/Button";
 import useScrollToTop from "../hooks/useScrollToTop";
 const ExperiencePage = () => {
   useScrollToTop();

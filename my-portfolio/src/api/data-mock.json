@@ -213,10 +213,19 @@
   ],
   "footer": [
     {
-      "text": "contact >>> rivasmig@gmail.com >>> +46 072 44 37 587 >>> Oskaström, Sweden"
+      "text": "rivasmig@gmail.com"
     },
     {
-      "text": "social >>> linkedin.com/in/miguelrivasin/ >>> github.com/miuel"
+      "text" : "+46 072 44 37 587"
+    },
+    {
+      "text" : "Oskaström, Sweden"
+    },
+    {
+      "text": "linkedin.com/in/miguelrivasin/"
+    },
+    {
+      "text": "github.com/miuel"
     },
     {
       "text": "2023"
@@ -240,33 +249,33 @@
   "cvText": "Download CV",
   "mapText": "Oskaström, Sweden",
   "images": {
-    "logo": "../assets/images/logo.png",
-    "logoMR": "../assets/images/logoMR.png",
-    "imgMonkey": "../../assets/images/collage.png",
-    "collageAnimal": "../assets/images/collage-animal.png",
-    "grid": "../assets/images/grid.png",
-    "cv": "../assets/images/cv_en_sw.pdf",
-    "map": "../assets/images/halmstad.png",
-    "intro": "../assets/images/intro_body.gif",
-    "wallet": "../assets/images/projects/jobs/itr/wallet.gif",
-    "walletSm": "../assets/images/projects/jobs/itr/wallet-sm.gif",
-    "ospuncba": "../assets/images/projects/jobs/beereal/ospuncba.gif",
-    "letters": "../assets/images/projects/personal/letters.gif",
-    "organic": "../assets/images/projects/personal/organic.mp4",
-    "headphone": "../assets/images/headphone.gif",
-    "handsome": "../assets/images/handsome.jpeg",
-    "me": "../assets/images/me.png",
-    "hospitalBritanico": "../assets/images/projects/jobs/itr/hospitalBritanico.gif",
-    "fashionable": "../assets/images/fashionable.jpeg",
-    "MR2B": "../assets/images/MR2B.png",
-    "patternpad": "../assets/images/patternpad.svg",
-    "jag": "../assets/images/home.jpeg",
-    "patternpadMarquee": "../assets/images/patternpadMarquee.svg",
-    "rembrandt": "../assets/images/rembrandt.png",
-    "naturvardsverket": "../assets/images/projects/jobs/consid/nv/nv.png",
-    "sverigesnationalparker": "../assets/images/projects/jobs/consid/nv/snp.png",
-    "lavinprognoser": "../assets/images/projects/jobs/consid/nv/lavin.png",
-    "agrosty": "../assets/images/projects/jobs/agrosty/agrosty.png",
+    "logo": "/portfolio/assets/images/logo.png",
+    "logoMR": "/portfolio/assets/images/logoMR.png",
+    "imgMonkey": "/portfolio/assets/images/collage.png",
+    "collageAnimal": "/portfolio/assets/images/collage-animal.png",
+    "grid": "/portfolio/assets/images/grid.png",
+    "cv": "/portfolio/assets/images/cv_en_sw.pdf",
+    "map": "/portfolio/assets/images/halmstad.png",
+    "intro": "/portfolio/assets/images/intro_body.gif",
+    "wallet": "/portfolio/assets/images/projects/jobs/itr/wallet.gif",
+    "walletSm": "/portfolio/assets/images/projects/jobs/itr/wallet-sm.gif",
+    "ospuncba": "/portfolio/assets/images/projects/jobs/beereal/ospuncba.gif",
+    "letters": "/portfolio/assets/images/projects/personal/letters.gif",
+    "organic": "/portfolio/assets/images/projects/personal/organic.mp4",
+    "headphone": "/portfolio/assets/images/headphone.gif",
+    "handsome": "/portfolio/assets/images/handsome.jpeg",
+    "me": "/portfolio/assets/images/me.png",
+    "hospitalBritanico": "/portfolio/assets/images/projects/jobs/itr/hospitalBritanico.gif",
+    "fashionable": "/portfolio/assets/images/fashionable.jpeg",
+    "MR2B": "/portfolio/assets/images/MR2B.png",
+    "patternpad": "/portfolio/assets/images/patternpad.svg",
+    "jag": "/portfolio/assets/images/home.jpeg",
+    "patternpadMarquee": "/portfolio/assets/images/patternpadMarquee.svg",
+    "rembrandt": "/portfolio/assets/images/rembrandt.png",
+    "naturvardsverket": "/portfolio/assets/images/projects/jobs/consid/nv/nv.png",
+    "sverigesnationalparker": "/portfolio/assets/images/projects/jobs/consid/nv/snp.png",
+    "lavinprognoser": "/portfolio/assets/images/projects/jobs/consid/nv/lavin.png",
+    "agrosty": "/portfolio/assets/images/projects/jobs/agrosty/agrosty.png",
     "icons": [
       {
         "icon": "angular"

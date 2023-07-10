@@ -1,7 +1,6 @@
 // Home Page
 import { Link } from "react-router-dom";
 import data from "../api/data-mock.json";
-import Marquee from "../components/Marquee";
 import useScrollToTop from "../hooks/useScrollToTop";
 
 const HomePage = () => {

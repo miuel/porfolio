@@ -7,8 +7,6 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
-
-
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
@@ -19,7 +17,7 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/porfolio" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Projects />} />
