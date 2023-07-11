@@ -1,17 +1,18 @@
 import React from 'react';
 import data from "../api/data-mock.json";
 import { useParams } from 'react-router-dom';
+import useImagePath from "../hooks/useImagePath";
 
 const ProjectItemPage = () => {
     const { id } = useParams();
-    const imageSrc = process.env.PUBLIC_URL;
     const info = data.projects.items.find(project => project.id === id);
+    const imageSrc = useImagePath(info.image);
 
     return (
         <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0">
             <div className="flex md:flex-nowrap gap-8 ">
             <div className="w-full md:w-1/2">
-                <img src={imageSrc + info.image} alt={info.heading} 
+                <img src={imageSrc} alt={info.heading} 
                  style={{ viewTransitionName : `project-image-${info.id}` }}
                 />
             </div>

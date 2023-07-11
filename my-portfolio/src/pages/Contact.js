@@ -2,11 +2,12 @@
 import data from "../api/data-mock.json";
 import Button from "../components/Button";
 import useScrollToTop from "../hooks/useScrollToTop";
+import useImagePath from "../hooks/useImagePath";
 
 const ContactPage = () => {
   useScrollToTop();
 
-  const imageSrc = process.env.PUBLIC_URL;
+  const imageSrc = useImagePath(data.images.map);
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <div className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
@@ -45,7 +46,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mt-5">
-            <img loading="lazy" className="w-full mr-0" src={imageSrc + data.images.map} alt={data.mapText} />
+            <img loading="lazy" className="w-full mr-0" src={imageSrc} alt={data.mapText} />
           </div>
         </div>
       </div>

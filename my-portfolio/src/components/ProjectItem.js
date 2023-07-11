@@ -2,10 +2,13 @@ import React from 'react';
 import { Badge } from "flowbite-react";
 import { flushSync } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
+import useImagePath from "../hooks/useImagePath";
 
 const ProjecItem = ({ project }) => {
-    const imageSrc = process.env.PUBLIC_URL;
+    
+    
     const navigate = useNavigate();
+    const imageSrc = useImagePath(project.image);
     return (
         <li className="" >
             <a
@@ -22,9 +25,8 @@ const ProjecItem = ({ project }) => {
                 <img
                     className="grayscale hover:grayscale-0 transition-all object-cover"
                     alt={project.heading}
-                    src={imageSrc + project.image}
+                    src={imageSrc}
                     style={{ viewTransitionName : `project-image-${project.id}` }}
-                //style={`view-transition-name: project-image-${project.id}`}
                 />
                 <h3 className="uppercase text-2xl text-center py-4 border-b-[1px] border-y-stone-400" aria-label={project.heading} >{project.heading}</h3>
             </a>
