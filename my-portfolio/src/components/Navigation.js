@@ -16,10 +16,10 @@ const Navigation = () => {
   }, [location]);
 
   return (
-    <nav className="p-4 bg-orange-400 sticky top-0 z-10 md:mb-20">
+    <nav className="p-4 bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg">
       <div className="overflow-auto max-w-6xl m-auto flex justify-center items-center">
         <Link to="/porfolio">
-          <img src={imageSrc} alt="logo" className="w-36 md:w-28"/>     
+          <img src={imageSrc} alt="logo" className="w-36 md:w-36"/>     
         </Link>
         <div className="w-full flex gap-8 flex-wrap  justify-end items-center md:justify-end pr-0 md:pr-8">
           {data.navigation.map((option, index) => (

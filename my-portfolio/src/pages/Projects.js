@@ -2,7 +2,6 @@
 // this page is a list of projects that I have worked on
 import data from "../api/data-mock.json";
 import useScrollToTop from "../hooks/useScrollToTop";
-
 import ProjecItem from "../components/ProjectItem";
 
 
