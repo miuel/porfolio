@@ -5,8 +5,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 
 const HomePage = () => {
   useScrollToTop();
-  return (
-    
+  return (    
       <section className="relative px-8 md:px-0 flex gap-8 m-0 home-section-h pb-8">
         <div className="max-w-75 pr-0 md:pr-8 mx-auto mt-8">
           <h1 className="text-3xl md:text-6xl font-bold font-bodoni py-5">

@@ -291,7 +291,7 @@
       "text": "+46 072 44 37 587"
     },
     {
-      "text": "Oskaström, Sweden"
+      "text": "Halmstad, Sweden"
     },
     {
       "text": "linkedin.com/in/miguelrivasin/"
@@ -319,13 +319,11 @@
     }
   ],
   "cvText": "Download CV",
-  "mapText": "Oskaström, Sweden",
+  "mapText": "Halmstad, Sweden",
   "images": {
     "logo": "/assets/images/logo.png",
     "logoMR": "/assets/images/logoMR.png",
     "imgMonkey": "/assets/images/collage.png",
-    "collageAnimal": "/assets/images/collage-animal.png",
-    "grid": "/assets/images/grid.png",
     "cv": "/assets/images/cv_en_sw.pdf",
     "map": "/assets/images/halmstad.png",
     "intro": "/assets/images/intro_body.gif",
@@ -336,19 +334,11 @@
     "organic": "/assets/images/projects/personal/organic.mp4",
     "headphone": "/assets/images/headphone.gif",
     "handsome": "/assets/images/handsome.jpeg",
-    "me": "/assets/images/me.png",
     "hospitalBritanico": "/assets/images/projects/jobs/itr/hospitalBritanico.gif",
-    "fashionable": "/assets/images/fashionable.jpeg",
-    "MR2B": "/assets/images/MR2B.png",
-    "patternpad": "/assets/images/patternpad.svg",
-    "jag": "/assets/images/home.jpeg",
-    "patternpadMarquee": "/assets/images/patternpadMarquee.svg",
-    "rembrandt": "/assets/images/rembrandt.png",
     "naturvardsverket": "/assets/images/projects/jobs/consid/nv/nv.png",
     "sverigesnationalparker": "/assets/images/projects/jobs/consid/nv/snp.png",
     "lavinprognoser": "/assets/images/projects/jobs/consid/nv/lavin.png",
     "agrosty": "/assets/images/projects/jobs/agrosty/agrosty.png",
-    "gridProject": "/assets/images/projects/grid_project.jpg",
     "icons": [
       {
         "icon": "angular"

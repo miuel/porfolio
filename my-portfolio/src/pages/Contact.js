@@ -6,6 +6,7 @@ import useScrollToTop from "../hooks/useScrollToTop";
 const ContactPage = () => {
   useScrollToTop();
 
+  const imageSrc = process.env.PUBLIC_URL;
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <div className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
@@ -21,7 +22,7 @@ const ContactPage = () => {
             >
               {data.contact.email}
             </a>
-            <p className="text-85rgba paragraph-style mt-5 font-bodoni">
+            <p className="text-85rgba paragraph-style mt-5">
               {data.contact.phone}
             </p>
           </div>
@@ -44,7 +45,7 @@ const ContactPage = () => {
           </div>
 
           <div className="mt-5">
-            <img loading="lazy" className="w-full mr-0" src={data.images.map} alt={data.mapText} />
+            <img loading="lazy" className="w-full mr-0" src={imageSrc + data.images.map} alt={data.mapText} />
           </div>
         </div>
       </div>
