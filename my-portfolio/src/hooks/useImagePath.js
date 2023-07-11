@@ -5,7 +5,7 @@ function useImagePath(imagePath) {
 
   useEffect(() => {
     const isLocalEnvironment = process.env.NODE_ENV === 'development';
-    const path = isLocalEnvironment ? process.env.PUBLIC_URL + imagePath : imagePath;
+    const path = isLocalEnvironment ? process.env.PUBLIC_URL + imagePath : 'porfolio' + imagePath;
     setResolvedPath(path);
   }, [imagePath]);
 
