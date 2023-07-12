@@ -10,21 +10,6 @@ const ServicesPage = () => {
   return (
     <section className="overflow-auto max-w-6xl m-auto">
       <div className="flex flex-col md:flex-row p-8 md:p-10 gap-8 border-b border-stone-400">
-        {/* <div className="w-full md:w-1/3">
-            <h2 aria-label="Service Title">{data.processOfCreation.heading}</h2>
-          <div className="hidden md:block relative h-[120px] -ml-52">
-            <div className="coin">
-              <div className="side heads">
-                <img className="img_back" loading="lazy" src={data.images.logo} alt="miguel logo" />
-              </div>
-              <div className="side tails">
-                <img className="img_back" loading="lazy" src={data.images.logo} alt="miguel logo back side" />
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-
         <div className="w-full md:w-2/3">
           <h2 className="text-4xl md:text-6xl" aria-label="Service slogan">{data.processOfCreation.service}</h2>
         </div>
