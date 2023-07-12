@@ -70,6 +70,7 @@
         "tech": [
           "React",
           "Next.js",
+          "SSR",
           "Tailwind",
           "Storybook",
           "JavaScript",
@@ -149,14 +150,15 @@
     "items": [
       {
         "heading": "NATUR VÅRDS VERKET",
-        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "description": "Recently undertook a maintenance task where I worked extensively with a range of powerful technologies including Styled Components, TypeScript, Redux, JavaScript, HTML, CSS, and React. My main focus was to gain a deep understanding of the existing codebase, enhance the project's architecture, and improve overall code quality.\n\nWith Styled Components, I leveraged component-based styling with CSS-in-JS, enabling a modular and reusable approach to styling. This not only improved code maintainability but also reduced CSS conflicts and provided a more streamlined development experience.\n\nThroughout the maintenance task, I diligently worked with JavaScript, HTML, and CSS to refactor and optimize existing code. I followed best practices and coding standards to ensure clean and efficient code. By improving the architecture of the project, I aimed to enhance scalability, readability, and performance.",
         "id": "nvv",
-        "url": "www.naturvardsverket.se/",
+        "url": "https://naturvardsverket.se/",
         "text": "Web Development",
         "image": "/assets/images/projects/jobs/consid/nv/nv.png",
         "tech": [
           "React",
-          "Next.js",
+          "SSR",
+          "Epi Server",
           "Tailwind",
           "Storybook",
           "JavaScript",
@@ -166,15 +168,16 @@
         ]
       },
       {
-        "heading": "LAVIN prognoser",
-        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "heading": "LAVIN PROGNOSER",
+        "description": "As a frontend developer, I successfully completed a task that involved developing an exceptional website using a range of cutting-edge technologies. With a focus on delivering an outstanding user experience, I utilized SSR (Server-Side Rendering). By leveraging React, Tailwind (updated version), Storybook, JavaScript, HTML, and CSS, I created a fluid and interactive user interface. React's component-based architecture enabled me to develop reusable and modular UI elements, ensuring efficiency and maintainability. Tailwind, with its updated version, played a crucial role in the website's design process. By harnessing the latest features and improvements, I was able to create visually appealing layouts and enhance the overall aesthetics. The updated Tailwind version offered an expanded utility class library, improved customization options, and increased flexibility, resulting in a more streamlined and efficient development workflow. Throughout the project, I actively collaborated with the UX team during the redesign phase. I took charge of the entire UI development, ensuring a seamless integration of design concepts into functional components. This involvement allowed me to effectively align the website's visual elements with the intended user experience, resulting in a cohesive and intuitive interface.",
         "id": "lavin",
-        "url": "www.lavinprognoser.se/",
+        "url": "https://lavinprognoser.se/",
         "text": "Web Development",
         "image": "/assets/images/projects/jobs/consid/nv/lavin.png",
         "tech": [
           "React",
-          "Next.js",
+          "SSR",
+          "Epi Server",
           "Tailwind",
           "Storybook",
           "JavaScript",
@@ -184,14 +187,15 @@
       },
       {
         "heading": "Sveriges national parker",
-        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "description": "As part of the frontend development team, I successfully executed a task that encompassed an exceptional website. By incorporating SSR and EPI Server, utilizing an updated version of Tailwind, collaborating with the UX team, and taking care of the UI development, I delivered a fluid, visually appealing, and user-friendly web experience.",
         "id": "snp",
-        "url": "www.sverigesnationalparker.se/",
+        "url": "https://sverigesnationalparker.se/",
         "text": "Web Development",
         "image": "/assets/images/projects/jobs/consid/nv/snp.png",
         "tech": [
           "React",
-          "Next.js",
+          "SSR",
+          "Epi Server",
           "Tailwind",
           "Storybook",
           "JavaScript",
@@ -202,17 +206,16 @@
       },
       {
         "heading": "hej albert",
-        "description": "A Clear Path. Proper preparation is key. We'll conduct a design-oriented survey to thoroughly examine the essence of your brand. Using the extensive brand data and practical experience collected, we'll conduct targeted research and develop an accurate visual strategy.",
+        "description": "As a mobile app developer, I had the opportunity to work on an exciting project where I utilized a powerful tech stack including React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. My main focus was on developing a new feature for a mobile application and improving the overall user experience.\n\nUsing React Native and TypeScript, I successfully implemented new features and functionality for the mobile application. This included enhancing the app's performance during peak periods such as Black Friday and Christmas, ensuring a smooth and seamless user experience even under high traffic loads. The improvements made during these punctual times resulted in increased user engagement and customer satisfaction.\n\nIn addition to the feature development, I integrated Google Analytics into the mobile application. By tracking usage and performance metrics, I gained valuable insights into user behavior and app performance. This data-driven approach allowed for continuous improvement and optimization of the mobile app's performance and user experience.\n\nIn summary, as part of the development team, I worked on the development of a new feature for a mobile application using React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. By implementing new features and functionality, improving user experience during peak periods, and integrating Google Analytics, I contributed to the success of the mobile application, resulting in increased user engagement and performance optimization.",
         "id": "hej-albert",
-        "url": "www.naturvardsverket.se/",
-        "text": "Web Development",
-        "image": "/assets/images/projects/jobs/consid/nv/nv.png",
+        "url": "https://hejalbert.se/",
+        "text": "App Development",
+        "image": "/assets/images/projects/jobs/hejalbert/hejAlbert.png",
         "tech": [
           "React",
-          "Next.js",
-          "Tailwind",
+          "Sass",
           "Storybook",
-          "JavaScript",
+          "Typescript",
           "HTML",
           "CSS"
         ]
