@@ -4,45 +4,36 @@ import { useLocation } from "react-router-dom";
 import data from "../api/data-mock.json";
 import Button from "./Button";
 import useImagePath from "../hooks/useImagePath";
-//import useViewport from "../hooks/useViewport";
-
-{/* 
-<nav className="p-4 bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg">
-      <div className="overflow-auto max-w-6xl m-auto flex justify-center items-center">
-        <Link to="/porfolio">
-          <img src={imageSrc} alt="logo" className="w-36 md:w-36" />
-        </Link>
-        <div className="w-full flex gap-8 flex-wrap  justify-end items-center md:justify-end pr-0 md:pr-8">
-          {data.navigation.map((option, index) => (
-            <Button
-              key={index.toString()}
-              aria-label={option.name}
-              className={"text-sm"}
-              text={option.name} link={option.url} isLink={true}
-              isSelected={option.url === selectedOption}
-              onClick={() => setSelectedOption(option.url)}
-            />
-          ))}
-        </div>
-      </div>
-    </nav> */}
 
 
 const Navigation = () => {
   const location = useLocation();
   const [selectedOption, setSelectedOption] = useState(null);
   const [showMenu, setShowMenu] = useState(false);
-  //const [isMobile, setIsMobile] = useState(window.innerWidth);
-  
+  const [isScrolling, setIsScrolling] = useState(false);
+  const imageSrc = useImagePath(data.images.logoOfficial);
+
+  /**
+   * logic to responsive
+   */
   const width = window.innerWidth;
   const breakpoint = 768;
   const isMobile = width < breakpoint;
-  
-  const imageSrc = useImagePath(data.images.logoMR);
-  
+
   useEffect(() => {
     setSelectedOption(location.pathname);
   }, [location]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(window.scrollY >= 80);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handlePageSelected = (pageSelected) => {
     setShowMenu(false);
@@ -51,10 +42,12 @@ const Navigation = () => {
 
   return (
 
-    <nav className="p-4 bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg">
+    <nav
+      className={`bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling ? 'opacity-100 transition-all duration-300' : ' opacity-0 transition-all duration-300' }`}
+    >
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/porfolio" >
-          <img src={imageSrc} alt="Miguel Rivas Logo" className="w-36 md:w-36" />
+          <img src={imageSrc} alt="Miguel Rivas Logo" className="w-36 md:w-24" />
         </a>
 
 
@@ -89,7 +82,6 @@ const Navigation = () => {
           </ul>
         </div>
       </div>
-
     </nav>
 
 

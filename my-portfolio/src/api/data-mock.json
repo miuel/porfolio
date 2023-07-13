@@ -325,6 +325,7 @@
   "mapText": "Halmstad, Sweden",
   "images": {
     "logo": "/assets/images/logo.png",
+    "logoOfficial": "/assets/images/logo-official.png",
     "logoMR": "/assets/images/logoMR.png",
     "imgMonkey": "/assets/images/collage.png",
     "cv": "/assets/images/cv_en.pdf",

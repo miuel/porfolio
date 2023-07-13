@@ -14,7 +14,7 @@ const ServicesPage = () => {
           <h2 className="text-4xl md:text-6xl" aria-label="Service slogan">{data.processOfCreation.service}</h2>
         </div>
         <div className="w-full md:w-1/3">
-          <Icon icon="logoMR" alt="logo" size={8} className="text-orange-400 mix-blend-multiply w-[300px]" />
+         <Icon icon="logoOfficial" alt="logo" size={8} className="text-orange-400 mix-blend-multiply w-[300px]" />
         </div>
       </div>
       <article>

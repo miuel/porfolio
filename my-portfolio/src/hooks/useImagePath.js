@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
 
+/**
+ * Hook to detect if i'm in dev env or prod 
+ * */ 
+
 function useImagePath(imagePath) {
   const [resolvedPath, setResolvedPath] = useState('');
 
