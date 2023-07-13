@@ -13,12 +13,11 @@ import ProjectItemPage from "./pages/[slug]";
 
 
 function App() {
-
   return (
-    <div>
+    <>
       <Navigation />
       <Routes>
-        <Route path="/porfolio" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
@@ -27,7 +26,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

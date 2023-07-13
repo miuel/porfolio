@@ -1,6 +1,6 @@
 // Navigation component
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import data from "../api/data-mock.json";
 import Button from "./Button";
 import useImagePath from "../hooks/useImagePath";
@@ -43,12 +43,12 @@ const Navigation = () => {
   return (
 
     <nav
-      className={`bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling ? 'opacity-100 transition-all duration-300' : ' opacity-0 transition-all duration-300' }`}
+      className={`bg-orange-400 sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling ? 'opacity-100 transition-all duration-300' : ' opacity-0 transition-all duration-300'}`}
     >
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/porfolio" >
+        <NavLink to="/" exact="true">
           <img src={imageSrc} alt="Miguel Rivas Logo" className="w-36 md:w-24" />
-        </a>
+        </NavLink>
 
 
         {isMobile && (
@@ -70,14 +70,15 @@ const Navigation = () => {
         >
           <ul className="w-full flex flex-col items-end mt-8 md:mt-0 md:flex-row justify-end gap-2 md:gap-6">
             {data.navigation.map((option, index) => (
-              <Button
+              <NavLink
+                to={option.url}
+                className={`text-sm w-fit hover:bg-white px-1 ${option.url === selectedOption ? "bg-white" : ""}`}
                 key={index.toString()}
-                aria-label={option.name}
-                className={"text-sm w-fit"}
-                text={option.name} link={option.url} isLink={true}
-                isSelected={option.url === selectedOption}
                 onClick={() => handlePageSelected(option.url)}
-              />
+              >
+                {option.name}
+              </NavLink>
+
             ))}
           </ul>
         </div>
