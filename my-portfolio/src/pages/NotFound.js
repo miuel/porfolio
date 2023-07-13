@@ -11,7 +11,7 @@ const NotFoundPage = () => (
         </h1>
         <Link
             className=" w-28 bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
-            to="/porfolio">{data.notFound.button}</Link>
+            to="/">{data.notFound.button}</Link>
     </div>
 );
 export default NotFoundPage;
