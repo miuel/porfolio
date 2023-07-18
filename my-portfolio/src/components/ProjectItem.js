@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge } from "flowbite-react";
+
 import { flushSync } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
 import useImagePath from "../hooks/useImagePath";
@@ -12,7 +12,8 @@ const ProjecItem = ({ project }) => {
     return (
         <li>
             <a
-                className="cursor-pointer" href={`/projects/${project.id}`}
+                className="cursor-pointer flex justify-center items-center flex-col" 
+                href={`/projects/${project.id}`}
                 onClick={(ev) => {
                     ev.preventDefault();
                     document.startViewTransition(() => {
@@ -23,7 +24,7 @@ const ProjecItem = ({ project }) => {
                 }}
             >
                 <img
-                    className="grayscale hover:grayscale-0 transition-all object-cover"
+                    className="grayscale hover:grayscale-0 transition-all object-cover max-h-60"
                     alt={project.heading}
                     src={imageSrc}
                     style={{ viewTransitionName: `project-image-${project.id}` }}
@@ -33,18 +34,6 @@ const ProjecItem = ({ project }) => {
             </a>
             <div >
                 <p className="font-mono text-center py-4 text-85rgba ">{project.text}</p>
-                <div className="flex flex-wrap gap-2 py-2 mb-12">
-                    {project.tech.map((tech, i) => (
-                        <Badge
-                            className="font-mono uppercase font-normal text-xs"
-                            color="gray"
-                            size="sm"
-                            key={i.toString()}
-                        >
-                            {tech}
-                        </Badge>
-                    ))}
-                </div>
             </div>
         </li>
     )

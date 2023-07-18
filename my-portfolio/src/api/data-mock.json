@@ -150,7 +150,7 @@
     "items": [
       {
         "heading": "NATUR VÅRDS VERKET",
-        "description": "Recently undertook a maintenance task where I worked extensively with a range of powerful technologies including Styled Components, TypeScript, Redux, JavaScript, HTML, CSS, and React. My main focus was to gain a deep understanding of the existing codebase, enhance the project's architecture, and improve overall code quality.\n\nWith Styled Components, I leveraged component-based styling with CSS-in-JS, enabling a modular and reusable approach to styling. This not only improved code maintainability but also reduced CSS conflicts and provided a more streamlined development experience.\n\nThroughout the maintenance task, I diligently worked with JavaScript, HTML, and CSS to refactor and optimize existing code. I followed best practices and coding standards to ensure clean and efficient code. By improving the architecture of the project, I aimed to enhance scalability, readability, and performance.",
+        "frontendDeveloperTask": "Recently undertook a maintenance task where I worked extensively with a range of powerful technologies including Styled Components, TypeScript, Redux, JavaScript, HTML, CSS, and React. My main focus was to gain a deep understanding of the existing codebase, enhance the project's architecture, and improve overall code quality.\n\nWith Styled Components, I leveraged component-based styling with CSS-in-JS, enabling a modular and reusable approach to styling. This not only improved code maintainability but also reduced CSS conflicts and provided a more streamlined development experience.\n\nThroughout the maintenance task, I diligently worked with JavaScript, HTML, and CSS to refactor and optimize existing code. I followed best practices and coding standards to ensure clean and efficient code. By improving the architecture of the project, I aimed to enhance scalability, readability, and performance.",
         "id": "nvv",
         "url": "https://naturvardsverket.se/",
         "text": "Web Development",
@@ -169,7 +169,7 @@
       },
       {
         "heading": "LAVIN PROGNOSER",
-        "description": "As a frontend developer, I successfully completed a task that involved developing an exceptional website using a range of cutting-edge technologies. With a focus on delivering an outstanding user experience, I utilized SSR (Server-Side Rendering). By leveraging React, Tailwind (updated version), Storybook, JavaScript, HTML, and CSS, I created a fluid and interactive user interface. React's component-based architecture enabled me to develop reusable and modular UI elements, ensuring efficiency and maintainability. Tailwind, with its updated version, played a crucial role in the website's design process. By harnessing the latest features and improvements, I was able to create visually appealing layouts and enhance the overall aesthetics. The updated Tailwind version offered an expanded utility class library, improved customization options, and increased flexibility, resulting in a more streamlined and efficient development workflow. Throughout the project, I actively collaborated with the UX team during the redesign phase. I took charge of the entire UI development, ensuring a seamless integration of design concepts into functional components. This involvement allowed me to effectively align the website's visual elements with the intended user experience, resulting in a cohesive and intuitive interface.",
+        "frontendDeveloperTask": "As a frontend developer, I successfully completed a task that involved developing an exceptional website using a range of cutting-edge technologies. With a focus on delivering an outstanding user experience, I utilized SSR (Server-Side Rendering). By leveraging React, Tailwind (updated version), Storybook, JavaScript, HTML, and CSS, I created a fluid and interactive user interface. React's component-based architecture enabled me to develop reusable and modular UI elements, ensuring efficiency and maintainability. Tailwind, with its updated version, played a crucial role in the website's design process. By harnessing the latest features and improvements, I was able to create visually appealing layouts and enhance the overall aesthetics. The updated Tailwind version offered an expanded utility class library, improved customization options, and increased flexibility, resulting in a more streamlined and efficient development workflow. Throughout the project, I actively collaborated with the UX team during the redesign phase. I took charge of the entire UI development, ensuring a seamless integration of design concepts into functional components. This involvement allowed me to effectively align the website's visual elements with the intended user experience, resulting in a cohesive and intuitive interface.",
         "id": "lavin",
         "url": "https://lavinprognoser.se/",
         "text": "Web Development",
@@ -187,7 +187,7 @@
       },
       {
         "heading": "Sveriges national parker",
-        "description": "As part of the frontend development team, I successfully executed a task that encompassed an exceptional website. By incorporating SSR and EPI Server, utilizing an updated version of Tailwind, collaborating with the UX team, and taking care of the UI development, I delivered a fluid, visually appealing, and user-friendly web experience.",
+        "frontendDeveloperTask": "As part of the frontend development team, I successfully executed a task that encompassed an exceptional website. By incorporating SSR and EPI Server, utilizing an updated version of Tailwind, collaborating with the UX team, and taking care of the UI development, I delivered a fluid, visually appealing, and user-friendly web experience.",
         "id": "snp",
         "url": "https://sverigesnationalparker.se/",
         "text": "Web Development",
@@ -206,7 +206,7 @@
       },
       {
         "heading": "hej albert",
-        "description": "As a mobile app developer, I had the opportunity to work on an exciting project where I utilized a powerful tech stack including React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. My main focus was on developing a new feature for a mobile application and improving the overall user experience.\n\nUsing React Native and TypeScript, I successfully implemented new features and functionality for the mobile application. This included enhancing the app's performance during peak periods such as Black Friday and Christmas, ensuring a smooth and seamless user experience even under high traffic loads. The improvements made during these punctual times resulted in increased user engagement and customer satisfaction.\n\nIn addition to the feature development, I integrated Google Analytics into the mobile application. By tracking usage and performance metrics, I gained valuable insights into user behavior and app performance. This data-driven approach allowed for continuous improvement and optimization of the mobile app's performance and user experience.\n\nIn summary, as part of the development team, I worked on the development of a new feature for a mobile application using React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. By implementing new features and functionality, improving user experience during peak periods, and integrating Google Analytics, I contributed to the success of the mobile application, resulting in increased user engagement and performance optimization.",
+        "frontendDeveloperTask": "As a mobile app developer, I had the opportunity to work on an exciting project where I utilized a powerful tech stack including React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. My main focus was on developing a new feature for a mobile application and improving the overall user experience.\n\nUsing React Native and TypeScript, I successfully implemented new features and functionality for the mobile application. This included enhancing the app's performance during peak periods such as Black Friday and Christmas, ensuring a smooth and seamless user experience even under high traffic loads. The improvements made during these punctual times resulted in increased user engagement and customer satisfaction.\n\nIn addition to the feature development, I integrated Google Analytics into the mobile application. By tracking usage and performance metrics, I gained valuable insights into user behavior and app performance. This data-driven approach allowed for continuous improvement and optimization of the mobile app's performance and user experience.\n\nIn summary, as part of the development team, I worked on the development of a new feature for a mobile application using React Native, Styled Components, TypeScript, Redux, JavaScript, HTML, and CSS. By implementing new features and functionality, improving user experience during peak periods, and integrating Google Analytics, I contributed to the success of the mobile application, resulting in increased user engagement and performance optimization.",
         "id": "hej-albert",
         "url": "https://hejalbert.se/",
         "text": "App Development",
@@ -218,6 +218,42 @@
           "Typescript",
           "HTML",
           "CSS"
+        ]
+      },
+      {
+        "heading": "ospuncba",
+        "frontendDeveloperTask": "As a mobile app developer, I had the privilege of working on a significant project that involved building the La Credencial Digital de la Obra Social del Personal de la Universidad Nacional del Centro de la Provincia de Buenos Aires mobile application. This app allowed users to perform administrative tasks, access information, and share their credentials for specific situations. It also facilitated interactions with our network of healthcare providers, benefiting both the primary user and their family members. From the initial stages to the final deployment, I played a pivotal role as the mobile app developer. I leveraged React and React Native to build a robust and user-friendly application. Redux Thunk was utilized for managing asynchronous actions and state management, ensuring seamless data flow within the app. I also implemented Sass for efficient styling, allowing for easier maintenance and customization. JavaScript, HTML, and CSS were the foundational languages used to create the app's structure, design, and responsiveness. Lastly, Firebase served as the backend and data storage solution, providing secure user authentication and data management capabilities.",        
+        "id": "ospuncba",
+        "url": "https://play.google.com/store/apps/details?id=com.ospuncpbacredencialdigital&hl=es_CR",
+        "text": "App Development",
+        "image": "/assets/images/projects/jobs/beereal/ospuncba.gif",
+        "tech": [
+          "React",
+          "React Native",
+          "Redux Thunk",
+          "Sass",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Firebase"
+        ]
+      },
+      {
+        "heading": "hospital britanico",
+        "frontendDeveloperTask": "As a mobile app developer, I had the opportunity to work on an exciting project that involved developing an app with a wide range of functionalities. The app provided users with convenient access to various features, including appointment scheduling, modification, and cancellation for both in-person and virtual medical appointments. Additionally, users could view their pending appointments, whether booked via phone, web portal, or the app itself. The app also offered the ability to schedule teleconsultations with doctors at a chosen date and time. Users could explore our medical centers and, if affiliated with the Hospital Británico Health Plan, access their digital credential for easy availability on their smartphones, providing quick and simple access to their medical information from anywhere. In summary, as the primary mobile app developer, I led the development of an app that offered a wide range of functionalities for easy access to medical services. Leveraging technologies such as React, Apache Cordova, Redux Thunk, Sass, JavaScript, HTML, CSS, and Phonegap, I built a cross-platform app that allowed users to schedule, modify, and cancel medical appointments, as well as access their digital credentials and explore medical centers. The app put user's medical information at their fingertips, providing a seamless and user-friendly experience, regardless of their location.",
+        "id": "hospital-britanico",
+        "url": "https://www.hospitalbritanico.org.ar/home/News/?id=285ad846-8c13-4089-92f6-8bf8309a62db",
+        "text": "App Development",
+        "image": "/assets/images/projects/jobs/itr/hospitalBritanico.gif",
+        "tech": [
+          "React",
+          "Apache Cordova",
+          "Redux Thunk",
+          "Sass",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Phonegap"
         ]
       }
     ]

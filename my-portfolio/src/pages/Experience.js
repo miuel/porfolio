@@ -24,7 +24,7 @@ const ExperiencePage = () => {
                       {job.name} • {job.place}
                     </Timeline.Title>
 
-                    <Timeline.Body className=" mb-1 ">
+                    <Timeline.Body className="mb-1">
                       {job.company}
                     </Timeline.Body>
                     <div className="flex flex-wrap gap-2 py-2">

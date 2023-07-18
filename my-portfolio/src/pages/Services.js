@@ -36,7 +36,6 @@ const ServicesPage = () => {
               </div>
             </div>
           ))}
-        {/* <p className="paragraph-style text-85rgba">{data.services.contact}</p> */}
       </article>
     </section>
 
