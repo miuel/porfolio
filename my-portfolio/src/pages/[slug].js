@@ -2,6 +2,7 @@ import React from 'react';
 import data from "../api/data-mock.json";
 import { useParams } from 'react-router-dom';
 import { Badge } from "flowbite-react";
+import { Link } from "react-router-dom";
 import useImagePath from "../hooks/useImagePath";
 import useScrollToTop from '../hooks/useScrollToTop';
 
@@ -13,7 +14,7 @@ const ProjectItemPage = () => {
 
     return (
         <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0 h-auto">
-            <div className="flex flex-wrap md:flex-nowrap gap-8 ">
+            <div className="flex flex-wrap md:flex-nowrap gap-8 my-16">
                 <div className="w-full md:w-1/2">
                     <img src={imageSrc} alt={info.heading}
                         style={{ viewTransitionName: `project-image-${info.id}` }}
@@ -34,7 +35,14 @@ const ProjectItemPage = () => {
                             </Badge>
                         ))}
                     </div>
-                    <p className="mt-1 w-4/5">{info.frontendDeveloperTask}</p>
+                    <p className="py-4 w-4/5 my-16">{info.frontendDeveloperTask}</p>
+                    <Link
+                        className="justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
+                        to="/projects"
+                        aria-label="Back to projects"
+                    >
+                        Back to projects{" "}
+                    </Link>
                 </div>
             </div>
         </section>
