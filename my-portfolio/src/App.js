@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ProjectItemPage from "./pages/[slug]";
-
+import LabPage from "./pages/Lab";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectItemPage />} />
+        <Route path="/lab" element={<LabPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

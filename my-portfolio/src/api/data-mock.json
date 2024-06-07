@@ -222,7 +222,7 @@
       },
       {
         "heading": "ospuncba",
-        "frontendDeveloperTask": "As a mobile app developer, I had the privilege of working on a significant project that involved building the La Credencial Digital de la Obra Social del Personal de la Universidad Nacional del Centro de la Provincia de Buenos Aires mobile application. This app allowed users to perform administrative tasks, access information, and share their credentials for specific situations. It also facilitated interactions with our network of healthcare providers, benefiting both the primary user and their family members. From the initial stages to the final deployment, I played a pivotal role as the mobile app developer. I leveraged React and React Native to build a robust and user-friendly application. Redux Thunk was utilized for managing asynchronous actions and state management, ensuring seamless data flow within the app. I also implemented Sass for efficient styling, allowing for easier maintenance and customization. JavaScript, HTML, and CSS were the foundational languages used to create the app's structure, design, and responsiveness. Lastly, Firebase served as the backend and data storage solution, providing secure user authentication and data management capabilities.",        
+        "frontendDeveloperTask": "As a mobile app developer, I had the privilege of working on a significant project that involved building the La Credencial Digital de la Obra Social del Personal de la Universidad Nacional del Centro de la Provincia de Buenos Aires mobile application. This app allowed users to perform administrative tasks, access information, and share their credentials for specific situations. It also facilitated interactions with our network of healthcare providers, benefiting both the primary user and their family members. From the initial stages to the final deployment, I played a pivotal role as the mobile app developer. I leveraged React and React Native to build a robust and user-friendly application. Redux Thunk was utilized for managing asynchronous actions and state management, ensuring seamless data flow within the app. I also implemented Sass for efficient styling, allowing for easier maintenance and customization. JavaScript, HTML, and CSS were the foundational languages used to create the app's structure, design, and responsiveness. Lastly, Firebase served as the backend and data storage solution, providing secure user authentication and data management capabilities.",
         "id": "ospuncba",
         "url": "https://play.google.com/store/apps/details?id=com.ospuncpbacredencialdigital&hl=es_CR",
         "text": "App Development",
@@ -257,6 +257,14 @@
         ]
       }
     ]
+  },
+  "lab": {
+    "title": "Lab",
+    "description": "I have been working on a project for the past few months. The project is a web application that allows users to create and share their own digital art. The application is built using React and React Native, and it utilizes a combination of HTML, CSS, and JavaScript. The project is designed to be user-friendly and visually appealing, with a focus on creating a unique and engaging user experience. I have also been working on the design and development of the application, which involves creating a responsive and visually appealing interface that is easy to navigate and use. I have also been working on the backend of the application, which involves creating a database and implementing the necessary APIs to allow users to upload and share their digital art. Overall, the project has been a great learning experience for me, and I am excited to continue working on it in the future.",
+    "sketchLines": {
+      "text": "Network Graph",
+      "description": "The code sets up an animated sketch using `canvas-sketch` where multiple agents move around the canvas, bouncing off the edges. Lines are drawn between agents that are within a certain distance of each other, creating a dynamic and interactive visualization. The agents' positions and velocities are updated in real-time, and their interactions are recalculated on each frame, resulting in an evolving pattern of connectivity. To calculate the distance between agents, the code uses the Pythagorean theorem to determine the hypotenuse (the direct line distance) between two points. This calculation is performed by the `getDistance` method of the `Vector` class, which uses the differences in the x and y coordinates of the two points to compute the Euclidean distance."
+    }
   },
   "contact": {
     "title": "Contact",
@@ -316,6 +324,10 @@
     {
       "name": "PROJECTS",
       "url": "/projects"
+    },
+    {
+      "name": "LAB",
+      "url": "/lab"
     },
     {
       "name": "CONTACT",
