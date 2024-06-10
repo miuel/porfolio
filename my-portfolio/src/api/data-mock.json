@@ -256,7 +256,8 @@
           "Phonegap"
         ]
       }
-    ]
+    ],
+    "backTxt": "Back to projects"
   },
   "lab": {
     "title": "Lab",
@@ -264,6 +265,10 @@
     "sketchLines": {
       "text": "Network Graph",
       "description": "The code sets up an animated sketch using `canvas-sketch` where multiple agents move around the canvas, bouncing off the edges. Lines are drawn between agents that are within a certain distance of each other, creating a dynamic and interactive visualization. The agents' positions and velocities are updated in real-time, and their interactions are recalculated on each frame, resulting in an evolving pattern of connectivity. To calculate the distance between agents, the code uses the Pythagorean theorem to determine the hypotenuse (the direct line distance) between two points. This calculation is performed by the `getDistance` method of the `Vector` class, which uses the differences in the x and y coordinates of the two points to compute the Euclidean distance."
+    },
+    "sketchFlags": {
+      "text": "Flags",
+      "description": "The Flags code function creates an animated sketch where lines are dynamically rotated and scaled within a grid of cells. Each line's properties are influenced by noise values, resulting in an organic, evolving pattern. The sketch uses canvas-sketch for rendering and canvas-sketch-util for noise generation and mathematical operations"
     }
   },
   "contact": {

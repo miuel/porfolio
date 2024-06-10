@@ -2,15 +2,15 @@
 import random from 'canvas-sketch-util/random';
 import math from 'canvas-sketch-util/math';
 
-export const Sketch3 = ({ context, width, height, settings }) => {
-  
+export const Sketch3 = ({ context, width, height, settings, hover }) => {
+
   const agents = [];
 
   for (let i = 0; i < 80; i++) {
     const x = random.range(0, width);
     const y = random.range(0, height);
 
-    agents.push(new Agent(x, y));    
+    agents.push(new Agent(x, y));
   }
 
   return ({ context, width, height }) => {
@@ -24,15 +24,19 @@ export const Sketch3 = ({ context, width, height, settings }) => {
         const element = agents[j];
 
         const dist = agent.pos.getDistance(element.pos);
+        const n = dist / 200;
+        const r = math.mapRange(n, -1, 1, 0, 255);
+        const g = math.mapRange(n, -1, 1, 0, 255);
+        const b = math.mapRange(n, -1, 1, 0, 255);
 
-        if(dist > 200) continue;
+        if (dist > 200) continue;
 
         context.lineWidth = math.mapRange(dist, 0, 200, 0, 1);
         context.beginPath();
-        context.strokeStyle = '#000000';
+        context.strokeStyle = hover ? '#ff0000' : '#313131';
         context.moveTo(agent.pos.x, agent.pos.y);
         context.lineTo(element.pos.x, element.pos.y);
-        
+
         context.stroke();
       }
     }
@@ -50,7 +54,7 @@ class Vector {
     this.x = x;
     this.y = y;
   }
-  
+
   getDistance(v) {
     const dx = this.x - v.x;
     const dy = this.y - v.y;
@@ -65,7 +69,7 @@ class Agent {
     this.velocity = new Vector(random.range(-1, 1), random.range(-1, 1));
     this.radius = random.range(1, 6);
   }
-  
+
   bounce(width, height) {
     if (this.pos.x <= 0 || this.pos.x >= width) this.velocity.x *= -1;
     if (this.pos.y <= 0 || this.pos.y >= height) this.velocity.y *= -1;
