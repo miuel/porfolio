@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { shuffle } from 'txt-shuffle';
 
-const TextShuffleComponent = ({ text }) => {
+const TextShuffleComponent = ({ text, glyphs, duration }) => {
     const textRef = useRef(null);
 
     useEffect(() => {
         if (textRef.current) {
             shuffle({
                 text: text,
-                //duration: 4,
+                duration: duration,
                 fps: 20,
-                glyphs: "▂▄▆",
+                glyphs: glyphs,
                 //glyphs: "_",
                 onUpdate: (output) => {
                     textRef.current.textContent = output;
