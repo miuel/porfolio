@@ -6,6 +6,7 @@ import data from "../api/data-mock.json";
 import useImagePath from "../hooks/useImagePath";
 import Icon from "../components/Icon";
 import Marquee from "../components/Marquee";
+import Loading from "../components/Loading";
 
 const Navigation = () => {
   const location = useLocation();
@@ -55,10 +56,10 @@ const Navigation = () => {
         className="md:mb-5"
       /> */}
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {imageSrc &&
+        {imageSrc ?
           <NavLink to="/" exact="true">
             <Icon icon="logoOfficial" alt="Miguel Angel Logo" size={8} className="text-black opacity-70 mix-blend-multiply w-36 md:w-24 " />
-          </NavLink>
+          </NavLink> : <Loading />
         }
 
 
