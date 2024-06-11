@@ -4,20 +4,21 @@
 import React from "react";
 import Icon from "./Icon";
 
-const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet, isLevel1 = false }) => {
+
+const Marquee = ({ data, repeatTimes = 3, showBullet, className, logo }) => {
   const arrRepeatTimes = Array.from({ length: repeatTimes });
 
   return (
     <>
-      {isLevel1 &&
-        <div className={`${bgColor} text-white py-2 ${height} marquee--is-animating overflow-x-hidden`}>
-          <div className="marquee__inner">
+      {!logo &&
+        <div className={` py-2 marquee--is-animating overflow-x-hidden ${className}`}>
+          <div className="marquee__inner" key={data.id}>
             {arrRepeatTimes &&
               arrRepeatTimes.map(
                 (item, index) =>
                   index <= repeatTimes && (
-                    <div className="marquee__groups" key={index.toString()}>
-                      <div className={`marquee__group font-mono letter-spacing-sm ${fontSize}`}>
+                    <div className="marquee__groups" key={index.toString() + data.id}>
+                      <div className={`marquee__group font-mono letter-spacing-sm`}>
                         {data.map((marquee, i) => {
                           return <>
                             <span className="uppercase">{marquee.text}</span>
@@ -32,28 +33,25 @@ const Marquee = ({ data, bgColor, repeatTimes = 3, height, fontSize, showBullet,
         </div>
       }
 
-      {!isLevel1 && <div className={`${bgColor} text-white py-2 ${height} marquee--is-animating overflow-x-hidden`}>
-        <div className="marquee__inner__icons">
-          {arrRepeatTimes &&
-            arrRepeatTimes.map(
-              (item, index) =>
-                index <= repeatTimes && (
-                  <div className="marquee__groups">
-                    <div className={`marquee__group font-mono text-base font-bold letter-spacing-sm`}>
-                      <div className="flex w-[3000px] items-center justify-around">
-                        {data.map((marquee, i) => (
-                          <>
-                            <span className="uppercase">{marquee.text}</span>
-                            {showBullet && <span className="marquee__bullet">•</span>}
-                          </>
-                        ))}
-                      </div>
+      {logo && (
+        <div className={`${className} py-2 marquee--is-animating overflow-x-hidden`}>
+          <div className="marquee__inner__icons" key={data.id}>
+            {arrRepeatTimes &&
+              arrRepeatTimes.map((item, index) =>
+                index <= repeatTimes ? (
+                  <div className="marquee__groups" key={index.toString() + data.id}>
+                    <div className="marquee__group font-mono text-base font-bold letter-spacing-sm flex items-center space-x-[50px]">
+                      <Icon icon="logoOfficial" alt="logo" size={8} className=" mix-blend-multiply w-12" />
                     </div>
+                    <span className="marquee__bullet">•</span>
                   </div>
-                ))}
+                ) : null
+              )}
+          </div>
         </div>
+      )}
 
-      </div>}
+
 
     </>)
 
