@@ -1,9 +1,9 @@
-import Marquee from "../components/Marquee";
+import data from "../api/data-mock.json";
+import useScrollToTop from "../hooks/useScrollToTop";
 import SketchComponent from "../components/SketchComponent";
 import { Sketch3 } from "../sketches/sketch3";
 import { Sketch4 } from "../sketches/sketch4";
-import useScrollToTop from "../hooks/useScrollToTop";
-import data from "../api/data-mock.json";
+import { Sketch2 } from "../sketches/sketch2";
 
 const LabPage = () => {
     useScrollToTop();
@@ -12,6 +12,18 @@ const LabPage = () => {
         dimensions: [500, 500],
         animate: true,
     };
+
+    const settingsSketch2 = {
+        dimensions: [500, 500],
+        //name: seed,
+        animate: true,
+        duration: 20,
+        fps: 30, // Frames per second
+        playbackRate: 'throttle'
+    };
+
+
+
     return (
         <>
             <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0">
@@ -39,6 +51,17 @@ const LabPage = () => {
                             </h2>
                             <p className="paragraph-style text-85rgba">
                                 {data?.lab.sketchFlags.description}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-black grid md:grid-cols-2 mt-5 py-4 border-b border-stone-400 md:border-none pr-8">
+                        <SketchComponent sketch={Sketch2} settings={settingsSketch2} />
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-bold font-bodoni py-5 text-white">
+                                {data?.lab.sketchTriangle.text}
+                            </h2>
+                            <p className="paragraph-style text-white">
+                                {data?.lab.sketchTriangle.description}
                             </p>
                         </div>
                     </div>

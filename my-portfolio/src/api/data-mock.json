@@ -269,6 +269,10 @@
     "sketchFlags": {
       "text": "Flags",
       "description": "The Flags code function creates an animated sketch where lines are dynamically rotated and scaled within a grid of cells. Each line's properties are influenced by noise values, resulting in an organic, evolving pattern. The sketch uses canvas-sketch for rendering and canvas-sketch-util for noise generation and mathematical operations"
+    },
+    "sketchTriangle": {
+      "text": "Skewed Transition",
+      "description": "This sketch generates an animated, looping artwork where multiple rectangles move across the canvas in various directions, while maintaining their skewed angles. The rectangles are constrained within a triangular mask, and their movement is reset when they go out of bounds, creating a continuous loop effect."
     }
   },
   "contact": {
