@@ -9,12 +9,12 @@ const ExperiencePage = () => {
     <section className="overflow-auto max-w-6xl m-auto">      
       <article className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
         <div className="w-full md:w-1/3">
-          <h1>{data.experience.title}</h1>
+          <h1>{data?.experience.title}</h1>
         </div>
 
         <div className="w-full md:w-2/3">
           <Timeline>
-            {data.experience &&
+            {data &&
               data.experience.jobs.map((job, index) => (
                 <Timeline.Item key={job.company + index.toString()}>
                   <Timeline.Point />
@@ -52,7 +52,7 @@ const ExperiencePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {data.cvText}
+            {data?.cvText}
           </a>
         </div>
       </article>

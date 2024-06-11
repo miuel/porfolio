@@ -41,7 +41,7 @@ const ProjectItemPage = () => {
                         to="/projects"
                         aria-label="Back to projects page"
                     >
-                        {data.projects.backTxt}{" "}
+                        {data?.projects.backTxt}{" "}
                     </Link>
                 </div>
             </div>
