@@ -4,7 +4,7 @@ import data from "../api/data-mock.json";
 import useScrollToTop from "../hooks/useScrollToTop";
 const ExperiencePage = () => {
   useScrollToTop();
-
+  const pdfPath = `${process.env.PUBLIC_URL}/assets/images/cv_en.pdf`;
   return (
     <section className="overflow-auto max-w-6xl m-auto">      
       <article className="flex flex-col md:flex-row p-8 md:p-10 gap-8">
@@ -48,8 +48,9 @@ const ExperiencePage = () => {
           </Timeline>
           <a
             className="bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400 cursor-pointer"
-            href={data.images.cv}
-            download
+            href={pdfPath}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {data.cvText}
           </a>
