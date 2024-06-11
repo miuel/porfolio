@@ -6,23 +6,18 @@ import Marquee from "../components/Marquee";
 const Footer = () => {
   return (
     <footer className="w-full pt-20 gap-8">
-      <Marquee
-        data={data.marqueeHeaderText}
+      {/* <Marquee
+        data={data.footer}
         repeatTimes={3}
-        bgColor="bg-stone-400"
-        height={"h-[100px]"}
-        fontSize={"text-4xl"}
         showBullet={true}
-        isLevel1
-      />
-
+        className="bg-black text-white "
+      /> */}
       <Marquee
         data={data.footer}
-        repeatTimes={5}
-        bgColor="bg-black"
-        fontSize={"text-xl font-bold"}
-        height={"h-[80px]"}
+        repeatTimes={100}
+        className={"bg-black opacity-80 text-white h-20 text-xl font-bold"}
         showBullet
+        logo={true}
       />
 
     </footer>
