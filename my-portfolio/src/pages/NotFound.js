@@ -5,7 +5,7 @@ import {
 import data from "../api/data-mock.json";
 
 const NotFoundPage = () => (
-    <div className="max-w-75 mx-auto p-8 md:p-0">
+    <div className="max-w-75 h-screen mx-auto p-8 md:p-0">
         <h1 className="text-4xl md:text-9xl font-bold font-bodoni py-5">
             {data.notFound.text}
         </h1>
