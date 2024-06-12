@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import data from "../api/data-mock.json";
-
 import useImagePath from "../hooks/useImagePath";
 import Icon from "../components/Icon";
 import Marquee from "../components/Marquee";
@@ -15,6 +14,8 @@ const Navigation = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const imageSrc = useImagePath(data.images.logoOfficial);
 
+  
+  console.log(location);
   /**
    * logic to responsive
    */
@@ -41,10 +42,6 @@ const Navigation = () => {
     setShowMenu(false);
     setSelectedOption(pageSelected);
   };
-  
-  // Function to get the basename dynamically
-  const getBasename = () => (process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BASENAME : '');
-
 
   return (
     <nav
@@ -108,7 +105,7 @@ const Navigation = () => {
           <ul className="w-full flex flex-col items-end mt-8 md:mt-0 md:flex-row justify-end gap-2 md:gap-6">
             {data?.navigation.map((option, index) => (
               <NavLink
-                to={`${getBasename()}${option.url}`}                
+                to={option.url}
                 className={`text-sm w-fit hover:bg-white px-1 ${
                   option.url === selectedOption ? "bg-white" : ""
                 }`}

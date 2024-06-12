@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./tailwind.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const basename = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BASENAME : '';
-
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
