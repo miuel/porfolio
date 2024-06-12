@@ -1,17 +1,19 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./tailwind.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+const basename = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_BASENAME : '';
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/porfolio">
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
