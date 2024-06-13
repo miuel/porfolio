@@ -10,18 +10,17 @@ import Loading from "../components/Loading";
 const Navigation = () => {
   const location = useLocation();
   const [selectedOption, setSelectedOption] = useState(null);
-  const [showMenu, setShowMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const imageSrc = useImagePath(data.images.logoOfficial);
 
-  
-  console.log(location);
   /**
    * logic to responsive
    */
   const width = window.innerWidth;
   const breakpoint = 768;
   const isMobile = width < breakpoint;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
   useEffect(() => {
     setSelectedOption(location.pathname);
@@ -39,17 +38,16 @@ const Navigation = () => {
   }, []);
 
   const handlePageSelected = (pageSelected) => {
-    setShowMenu(false);
+    setIsOpen(false);
     setSelectedOption(pageSelected);
   };
 
   return (
     <nav
-      className={`animated-gradient sticky top-0 z-10 md:mb-20 shadow-lg ${
-        !isScrolling
-          ? "opacity-100 transition-all duration-300"
-          : " opacity-0 transition-all duration-300"
-      }`}
+      className={`animated-gradient sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
+        ? "opacity-100 transition-all duration-300"
+        : " opacity-0 transition-all duration-300"
+        }`}
     >
       {/* <Marquee
         data={data.footer}
@@ -72,43 +70,39 @@ const Navigation = () => {
           <Loading />
         )}
 
+       
+
         {isMobile && (
           <button
-            type="button"
-            className="text-black hover:text-black focus:outline-none"
-            onClick={() => setShowMenu(!showMenu)}
+            className="flex flex-col h-12 w-12 justify-center items-center group"
+            onClick={() => setIsOpen(!isOpen)}
           >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+            <div
+              className={`${genericHamburgerLine} ${isOpen
+                  ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
+                }`}
+            />
+            <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
+            <div
+              className={`${genericHamburgerLine} ${isOpen
+                  ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
+                  : "opacity-50 group-hover:opacity-100"
+                }`}
+            />
           </button>
         )}
 
         <div
-          className={`w-full md:w-auto md:flex flex-grow ${
-            showMenu ? "block ease-out " : "hidden"
-          } md:block`}
+          className={`w-full md:w-auto md:flex flex-grow ${isOpen ? "block ease-out " : "hidden"
+            } md:block`}
         >
           <ul className="w-full flex flex-col items-end mt-8 md:mt-0 md:flex-row justify-end gap-2 md:gap-6">
             {data?.navigation.map((option, index) => (
               <NavLink
                 to={option.url}
-                className={`text-sm w-fit hover:bg-white px-1 ${
-                  option.url === selectedOption ? "bg-white" : ""
-                }`}
+                className={`text-sm w-fit hover:bg-white px-1 ${option.url === selectedOption ? "bg-white" : ""
+                  }`}
                 key={index.toString()}
                 onClick={() => handlePageSelected(option.url)}
               >
