@@ -323,10 +323,13 @@
   }
   
   .animated-gradient {
-    background: linear-gradient(270deg, #9feadb, #fad0c4, #fad0c4, #ff9a9e);
+    background: linear-gradient(270deg, #9feadb, #fad0c4, #e5cda7, #95dcf9);
     background-size: 600% 600%;
     animation: gradientBackground 25s ease infinite;
   }
   
-
+  .grad-filter {
+    filter: blur(180px);
+    -webkit-filter: blur(180px);
+  }
 }
