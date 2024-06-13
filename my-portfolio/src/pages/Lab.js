@@ -56,7 +56,7 @@ const LabPage = () => {
                     </div>
                     <div className="bg-black grid md:grid-cols-2 mt-5 py-4 border-b border-stone-400 md:border-none pr-8">
                         <SketchComponent sketch={Sketch2} settings={settingsSketch2} />
-                        <div>
+                        <div className="px-2 md:px-0">
                             <h2 className="text-2xl md:text-3xl font-bold font-bodoni py-5 text-white">
                                 {data?.lab.sketchTriangle.text}
                             </h2>
