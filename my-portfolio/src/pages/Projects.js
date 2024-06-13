@@ -18,7 +18,7 @@ const ProjectPage = () => {
           {data?.projects.description}
         </p>
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:gap-16 my-16 md:place-items-center">
+      <ul className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 md:gap-16 md:my-16 md:place-items-center">
         {data?.projects.items &&
           data?.projects.items.map((item, index) => {
             return (

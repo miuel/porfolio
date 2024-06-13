@@ -10,8 +10,9 @@ const ProjecItem = ({ project }) => {
 
     const navigate = useNavigate();
     const imageSrc = useImagePath(project.image);
+    
     return (
-        <li>
+        <li className="my-4 md:my-0">
             {!imageSrc ? <Loading /> : (
                 <>
                     <a
@@ -19,11 +20,17 @@ const ProjecItem = ({ project }) => {
                         href={`/projects/${project.id}`}
                         onClick={(ev) => {
                             ev.preventDefault();
-                            document.startViewTransition(() => {
-                                flushSync(() => {
-                                    navigate(`/projects/${project.id}`);
+                            
+                            if (document.startViewTransition) {
+                                document.startViewTransition(() => {
+                                    flushSync(() => {
+                                        navigate(`/projects/${project.id}`);
+                                    });
                                 });
-                            });
+                            } else {
+                                // Fallback for browsers that do not support startViewTransition
+                                navigate(`/projects/${project.id}`);
+                            }
                         }}
                     >
                         <img
