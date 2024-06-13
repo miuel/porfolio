@@ -23,14 +23,13 @@ const ProjectItemPage = () => {
                 </div>
                 <div className="w-full md:w-1/2">
                     <h1 className="text-2xl md:text-3xl font-bold uppercase mb-2">{info.heading}</h1>
-                    <a href={info.url} target="_blank" rel="noreferrer" className="cursor-pointer font-mono break-words" >
+                    <a href={info.url} target="_blank" rel="noreferrer" className="cursor-pointer" >
                         <Badge
-                            className="font-mono uppercase font-normal text-xs shadow-md w-fit my-2 flex"
+                            className="font-mono uppercase font-normal text-xs shadow-md w-fit my-2"
                             color="success"
                             size="sm"
                         >
-                            visit website
-
+                            {data.visitWeb}
                         </Badge>
                     </a>
                     <div className="flex flex-wrap gap-2 py-2 ">
