@@ -18,13 +18,13 @@ const ContactPage = () => {
         <div className="w-full md:w-2/3">
           <div className="flex flex-col pb-5 border-b border-stone-400">
             <a
-              className="text-85rgba paragraph-style mt-5 font-bodoni"
+              className="paragraph-style mt-5"
               href={`mailto:${data?.contact.email}`}
               aria-label="Email"
             >
               {data?.contact.email}
             </a>
-            <p className="text-85rgba paragraph-style mt-5">
+            <p className="paragraph-style mt-5">
               {data?.contact.phone}
             </p>
           </div>
@@ -37,13 +37,13 @@ const ContactPage = () => {
           </div>
 
           <div className="pb-5 border-b border-stone-400">
-            <p className="mt-5 paragraph-style text-85rgba">
+            <p className="mt-5 paragraph-style">
               {data?.contact.shortText}
             </p>
           </div>
 
           <div className="pb-5 border-b border-stone-400">
-            <p className="mt-5 paragraph-style text-85rgba">{data?.contact.address}</p>
+            <p className="mt-5 paragraph-style">{data?.contact.address}</p>
           </div>
 
           {imageSrc ? (

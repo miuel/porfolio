@@ -14,7 +14,7 @@ const ProjectPage = () => {
     <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0">
       <h1>{data?.projects.title}</h1>
       <div className="mt-5 py-4 border-y border-y-stone-400">
-        <p className="paragraph-style text-85rgba">
+        <p className="paragraph-style">
           {data?.projects.description}
         </p>
       </div>

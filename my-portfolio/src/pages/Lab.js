@@ -38,7 +38,8 @@ const LabPage = () => {
                             <h2 className="text-2xl md:text-3xl font-bold font-bodoni py-5">
                                 {data?.lab.sketchLines.text}
                             </h2>
-                            <p className="paragraph-style text-85rgba">
+                            <p className="
+                            paragraph-style">
                                 {data?.lab.sketchLines.description}
                             </p>
                         </div>
@@ -49,7 +50,8 @@ const LabPage = () => {
                             <h2 className="text-2xl md:text-3xl font-bold font-bodoni py-5">
                                 {data?.lab.sketchFlags.text}
                             </h2>
-                            <p className="paragraph-style text-85rgba">
+                            <p className="
+                            paragraph-style">
                                 {data?.lab.sketchFlags.description}
                             </p>
                         </div>
@@ -60,7 +62,8 @@ const LabPage = () => {
                             <h2 className="text-2xl md:text-3xl font-bold font-bodoni py-5 text-white">
                                 {data?.lab.sketchTriangle.text}
                             </h2>
-                            <p className="paragraph-style text-white">
+                            <p className="
+                            text-white font-mono text-base">
                                 {data?.lab.sketchTriangle.description}
                             </p>
                         </div>

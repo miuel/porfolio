@@ -36,8 +36,7 @@
   h1,
   h2,
   h3,
-  h4,
-  p {
+  h4 {
     font-family: serif, 'Bodoni Moda';
     color: rgba(0, 0, 0, 0.75);
   }
@@ -63,11 +62,7 @@
   }
 
   .paragraph-style {
-    font-size: 1.2rem !important;
-    line-height: 1.6 !important;
-  }
-
-  .text-85rgba {
+    @apply text-base font-mono;
     color: rgba(0, 0, 0, 0.85) !important;
   }
 

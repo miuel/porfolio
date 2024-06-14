@@ -39,7 +39,7 @@ const ExperiencePage = () => {
                         </Badge>
                       ))}
                     </div>
-                    <Timeline.Body className="paragraph-style font-serif-bodoni text-85rgba">
+                    <Timeline.Body className="paragraph-style">
                       {job.description}
                     </Timeline.Body>
                   </Timeline.Content>

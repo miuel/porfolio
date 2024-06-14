@@ -43,7 +43,7 @@ const ProjecItem = ({ project }) => {
                         <h2 className="uppercase text-2xl text-center py-4 md:mt-5 border-y-[1px] border-y-stone-400" aria-label={project.heading} >{project.heading}</h2>
                     </a>
                     <div >
-                        <p className="font-mono text-center py-4 text-85rgba ">{project.text}</p>
+                        <p className="text-center py-4 paragraph-style">{project.text}</p>
                     </div>
                 </>)
             }

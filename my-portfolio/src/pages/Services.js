@@ -32,7 +32,7 @@ const ServicesPage = () => {
                 </h3>
               </div>
               <div className="w-full md:w-2/3">
-                <p className="paragraph-style text-85rgba">
+                <p className="paragraph-style">
                   {service.description}
                 </p>
               </div>
