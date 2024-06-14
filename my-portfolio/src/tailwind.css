@@ -30,7 +30,7 @@
     letter-spacing: 3px;
     font-size: 2.2rem;
     line-height: 1.6;
-    
+
   }
 
   h1,
@@ -80,6 +80,17 @@
 
   .home-section-h {
     height: calc(100% - 200px);
+  }
+
+
+  .project-item-container:hover {
+    img {
+      @apply grayscale-0;
+    }
+
+    h2 {
+      @apply underline text-blue-500;
+    }
   }
 
   /** Card styles */
@@ -309,20 +320,22 @@
     0% {
       background-position: 0% 50%;
     }
+
     50% {
       background-position: 80% 50%;
     }
+
     100% {
       background-position: 0% 50%;
     }
   }
-  
+
   .animated-gradient {
     background: linear-gradient(270deg, #9feadb, #fad0c4, #e5cda7, #95dcf9);
     background-size: 600% 600%;
     animation: gradientBackground 25s ease infinite;
   }
-  
+
   .grad-filter {
     filter: blur(180px);
     -webkit-filter: blur(180px);

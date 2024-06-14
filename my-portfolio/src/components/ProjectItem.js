@@ -16,7 +16,7 @@ const ProjecItem = ({ project }) => {
             {!imageSrc ? <Loading /> : (
                 <>
                     <a
-                        className="cursor-pointer flex justify-center items-center flex-col"
+                        className="cursor-pointer flex justify-center items-center flex-col project-item-container"
                         href={`/projects/${project.id}`}
                         onClick={(ev) => {
                             ev.preventDefault();
@@ -34,7 +34,7 @@ const ProjecItem = ({ project }) => {
                         }}
                     >
                         <img
-                            className="grayscale hover:grayscale-0 transition-all object-cover max-h-60"
+                            className="grayscale transition-all object-cover max-h-60"
                             alt={project.heading}
                             src={imageSrc}
                             style={{ viewTransitionName: `project-image-${project.id}` }}
