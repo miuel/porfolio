@@ -44,7 +44,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`animated-gradient sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
+      className={`${selectedOption !== "/" && "animated-gradient" } sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
         ? "opacity-100 transition-all duration-300"
         : " opacity-0 transition-all duration-300"
         }`}
