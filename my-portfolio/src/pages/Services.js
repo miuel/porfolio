@@ -12,7 +12,7 @@ const ServicesPage = () => {
       <div className="flex flex-col md:flex-row p-8 md:p-10 gap-8 border-b border-stone-400">
         <div className="w-full md:w-2/3">
           <h2 className="text-4xl md:text-6xl" aria-label="Service slogan">
-            <TextShuffle text={data?.processOfCreation.service} duration={4} />
+            <TextShuffle text={data?.processOfCreation.service} duration={3} />
           </h2>
         </div>
         <div className="w-full md:w-1/3">
