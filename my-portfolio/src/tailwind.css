@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap");
 
 :root {
   --marquee-width: -4000px;
@@ -30,14 +30,13 @@
     letter-spacing: 3px;
     font-size: 2.2rem;
     line-height: 1.6;
-
   }
 
   h1,
   h2,
   h3,
   h4 {
-    font-family: serif, 'Bodoni Moda';
+    font-family: serif, "Bodoni Moda";
     color: rgba(0, 0, 0, 0.75);
   }
 
@@ -58,7 +57,7 @@
   }
 
   .font-serif-bodoni {
-    font-family: serif, 'Bodoni Moda';
+    font-family: serif, "Bodoni Moda";
   }
 
   .paragraph-style {
@@ -81,7 +80,6 @@
   .home-section-h {
     height: calc(100% - 200px);
   }
-
 
   .project-item-container:hover {
     img {
@@ -144,15 +142,13 @@
   .frontSide,
   .frontSide::before {
     background: #e0e0e0;
-    box-shadow: 24px 24px 47px #bebebe,
-      -24px -24px 47px #ffffff;
+    box-shadow: 24px 24px 47px #bebebe, -24px -24px 47px #ffffff;
   }
 
   .backSide,
   .backSide::before {
     background: #e0e0e0;
-    box-shadow: 24px 24px 47px #bebebe,
-      -24px -24px 47px #ffffff;
+    box-shadow: 24px 24px 47px #bebebe, -24px -24px 47px #ffffff;
   }
 
   .backSide {
@@ -164,7 +160,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: '';
+    content: "";
     width: 110%;
     height: 110%;
     position: absolute;
@@ -193,15 +189,13 @@
     height: 254px;
     border-radius: 30px;
     background: #e0e0e0;
-    box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #ffffff;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   }
 
   .neumorphism-coin {
     border-radius: 50%;
     background: #e0e0e0;
-    box-shadow: 24px 24px 47px #bebebe,
-      -24px -24px 47px #ffffff;
+    box-shadow: 24px 24px 47px #bebebe, -24px -24px 47px #ffffff;
   }
 
   .card {
@@ -209,8 +203,7 @@
     height: 254px;
     border-radius: 30px;
     background: #e0e0e0;
-    box-shadow: 15px 15px 30px #bebebe,
-      -15px -15px 30px #ffffff;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
   }
 
   /** Marquee Styles */
@@ -305,7 +298,6 @@
 
   /* END marquee */
 
-
   .h-600 {
     height: 600px !important;
   }
@@ -313,7 +305,6 @@
   .grid-col-custom {
     @apply grid gap-5;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-
   }
 
   @keyframes gradientBackground {
@@ -339,5 +330,23 @@
   .grad-filter {
     filter: blur(180px);
     -webkit-filter: blur(180px);
+  }
+
+  @keyframes animateLetter {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0) scale(0);
+      filter: blur(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+      filter: blur(0px);
+      color: rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .visible {
+    color: rgba(0, 0, 0, 0.75);
   }
 }

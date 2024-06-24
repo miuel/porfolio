@@ -63,7 +63,7 @@ const Navigation = () => {
               icon="logoOfficial"
               alt="Miguel Angel Logo"
               size={8}
-              className="text-black opacity-70 mix-blend-multiply w-36 md:w-24 "
+              className="text-black opacity-70 mix-blend-multiply w-36 md:w-24"
             />
           </NavLink>
         ) : (
