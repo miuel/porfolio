@@ -44,7 +44,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`${!!isMobile && selectedOption !== "/" && "animated-gradient"} ${isMobile && "animated-gradient"} sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
+      className={`${!isMobile && selectedOption !== "/" && "animated-gradient"} ${isMobile && "animated-gradient"} sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
         ? "opacity-100 transition-all duration-300"
         : " opacity-0 transition-all duration-300"
         }`}
