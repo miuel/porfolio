@@ -29,6 +29,13 @@ const LabPage = () => {
   const handleLoad = () => {
     setIsLoading(false);
   };
+
+  const handleError = (error) => {
+    console.error('Spline loading error:', error);
+    setIsLoading(false);
+  };
+
+  
   return (
     <>
       <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0">
@@ -41,6 +48,7 @@ const LabPage = () => {
               <Spline
                 scene="https://prod.spline.design/DCtwHq4kJ8iLdwpo/scene.splinecode"
                 onLoad={handleLoad}
+                onError={handleError}
               />
             </section>
 
