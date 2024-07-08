@@ -33,7 +33,7 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="animated-gradient grad-filter w-screen h-[1000px] absolute -top-[200px] left-0 z-[-1]"></div>
+     
       <section className="relative px-8 md:px-0 flex gap-8 m-0 home-section-h pb-8">
         <div className="max-w-75 pr-0 md:pr-8 mx-auto mt-8">
 
