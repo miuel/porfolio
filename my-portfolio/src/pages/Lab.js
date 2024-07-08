@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Spline from "@splinetool/react-spline";
 import SketchComponent from "../components/SketchComponent";
-import Loading from "../components/Loading";
 import data from "../api/data-mock.json";
 import useScrollToTop from "../hooks/useScrollToTop";
 import { Sketch3 } from "../sketches/sketch3";
@@ -26,16 +25,6 @@ const LabPage = () => {
     playbackRate: "throttle",
   };
 
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const handleError = (error) => {
-    console.error('Spline loading error:', error);
-    setIsLoading(false);
-  };
-
-  
   return (
     <>
       <section className="overflow-auto max-w-6xl m-auto p-8 md:p-0">
@@ -44,12 +33,7 @@ const LabPage = () => {
 
           <div className="grid  md:grid-cols-2 mt-5 py-4 border-b border-stone-400 md:border-none ">
             <section className="w-[512px] relative section section--border">
-              {isLoading && <Loading />}
-              <Spline
-                scene="https://prod.spline.design/DCtwHq4kJ8iLdwpo/scene.splinecode"
-                onLoad={handleLoad}
-                onError={handleError}
-              />
+              <Spline scene="https://prod.spline.design/DCtwHq4kJ8iLdwpo/scene.splinecode" />
             </section>
 
             <div>
