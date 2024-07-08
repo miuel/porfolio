@@ -2,7 +2,7 @@
 import useScrollToTop from "../hooks/useScrollToTop";
 import data from "../api/data-mock.json";
 import Icon from "../components/Icon";
-//import Spline from "@splinetool/react-spline";
+import Spline from "@splinetool/react-spline";
 import TextShuffle from "../components/TextShuffle";
 
 const ServicesPage = () => {
@@ -16,9 +16,9 @@ const ServicesPage = () => {
             <TextShuffle text={data?.processOfCreation.service} duration={3} />
           </h2>
         </div>
-        <div className="w-full md:w-1/3">
-        <Icon icon="logoOfficial" alt="logo" size={8} className="text-black opacity-70 mix-blend-multiply w-[300px]" />
-          {/* <Spline scene="https://prod.spline.design/DAuFwf7C-spwxy8E/scene.splinecode" /> */}
+        <div className="w-full md:w-2/4 -mt-24">
+          {/* <Icon icon="logoOfficial" alt="logo" size={8} className="text-black opacity-70 mix-blend-multiply w-[300px]" /> */}
+          <Spline scene="https://prod.spline.design/DAuFwf7C-spwxy8E/scene.splinecode" />
         </div>
       </div>
       <article>
