@@ -3,8 +3,6 @@ import useScrollToTop from "../hooks/useScrollToTop";
 import data from "../api/data-mock.json";
 import Spline from "@splinetool/react-spline";
 
-
-
 const ServicesPage = () => {
   useScrollToTop();
 
@@ -16,7 +14,7 @@ const ServicesPage = () => {
             {data?.processOfCreation.service}
           </h2>
         </div>
-        <div className="w-full md:w-2/4 md:-mt-24 -ml-20 md:ml-0 spline-child">
+        <div className="w-full md:w-2/4 md:-mt-24 md:ml-0 spline-child flex md:block justify-center items-center">
           {/* <Icon icon="logoOfficial" alt="logo" size={8} className="text-black opacity-70 mix-blend-multiply w-[300px]" /> */}
           <Spline scene="https://prod.spline.design/DAuFwf7C-spwxy8E/scene.splinecode" />
         </div>
