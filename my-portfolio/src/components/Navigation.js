@@ -43,12 +43,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav
-      className={`${!isMobile && selectedOption !== "/contact" && "animated-gradient"} ${isMobile && "animated-gradient"} sticky top-0 z-10 md:mb-20 shadow-lg ${!isScrolling
-        ? "opacity-100 transition-all duration-300"
-        : " opacity-0 transition-all duration-300"
-        }`}
-    >
+    <nav className={` bg-transparent sticky top-0 z-10 md:mb-20 shadow-lg `}>
       {/* <Marquee
         data={data.footer}
         repeatTimes={3}
@@ -70,39 +65,45 @@ const Navigation = () => {
           <Loading />
         )}
 
-       
-
         {isMobile && (
           <button
             className="flex flex-col h-12 w-12 justify-center items-center group"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
-              className={`${genericHamburgerLine} ${isOpen
+              className={`${genericHamburgerLine} ${
+                isOpen
                   ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100"
                   : "opacity-50 group-hover:opacity-100"
-                }`}
+              }`}
             />
-            <div className={`${genericHamburgerLine} ${isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"}`} />
             <div
-              className={`${genericHamburgerLine} ${isOpen
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
                   ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100"
                   : "opacity-50 group-hover:opacity-100"
-                }`}
+              }`}
             />
           </button>
         )}
 
         <div
-          className={`w-full md:w-auto md:flex flex-grow ${isOpen ? "block ease-out " : "hidden"
-            } md:block`}
+          className={`w-full md:w-auto md:flex flex-grow ${
+            isOpen ? "block ease-out " : "hidden"
+          } md:block`}
         >
           <ul className="w-full flex flex-col items-end mt-8 md:mt-0 md:flex-row justify-end gap-2 md:gap-6">
             {data?.navigation.map((option, index) => (
               <NavLink
                 to={option.url}
-                className={`text-sm w-fit hover:bg-white px-1 ${option.url === selectedOption ? "bg-white" : ""
-                  }`}
+                className={`text-sm w-fit hover:bg-white px-1 ${
+                  option.url === selectedOption ? "bg-white" : ""
+                }`}
                 key={index.toString()}
                 onClick={() => handlePageSelected(option.url)}
               >
