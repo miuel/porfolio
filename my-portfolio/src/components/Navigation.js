@@ -4,7 +4,6 @@ import { useLocation, NavLink } from "react-router-dom";
 import data from "../api/data-mock.json";
 import useImagePath from "../hooks/useImagePath";
 import Icon from "../components/Icon";
-import Marquee from "../components/Marquee";
 import Loading from "../components/Loading";
 
 const Navigation = () => {
@@ -43,14 +42,8 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={` bg-transparent sticky top-0 z-10 md:mb-20 shadow-lg `}>
-      {/* <Marquee
-        data={data.footer}
-        repeatTimes={3}
-        showBullet={true}
-        isLevel1
-        className="md:mb-5"
-      /> */}
+    <nav className={` bg-transparent relative md:mb-20 shadow-lg `}>
+  
       <div className="max-w-6xl flex flex-wrap items-center justify-between mx-auto p-4">
         {imageSrc ? (
           <NavLink to="/" exact="true">
@@ -101,8 +94,8 @@ const Navigation = () => {
             {data?.navigation.map((option, index) => (
               <NavLink
                 to={option.url}
-                className={`text-sm w-fit hover:bg-white px-1 ${
-                  option.url === selectedOption ? "bg-white" : ""
+                className={`text-sm w-fit hover:bg-stone-400 hover:text-white px-1 ${
+                  option.url === selectedOption ? "bg-stone-400" : ""
                 }`}
                 key={index.toString()}
                 onClick={() => handlePageSelected(option.url)}

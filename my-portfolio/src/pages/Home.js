@@ -1,6 +1,5 @@
 // Home Page
 import { React, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import data from "../api/data-mock.json";
 import useScrollToTop from "../hooks/useScrollToTop";
 const HomePage = () => {
@@ -51,13 +50,6 @@ const HomePage = () => {
             className="break-words paragraph-style mb-12"
             dangerouslySetInnerHTML={{ __html: data?.home.text }}
           />
-          <Link
-            className="justify-end bg-stone-400 text-white font-bold p-4 rounded hover:bg-white hover:text-stone-400 hover:border hover:border-stone-400"
-            to="/contact"
-            aria-label="Contact us"
-          >
-            Let's talk{" "}
-          </Link>
         </div>
       </section>
     </>
