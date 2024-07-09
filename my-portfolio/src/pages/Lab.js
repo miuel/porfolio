@@ -33,7 +33,7 @@ const LabPage = () => {
 
           <div className="grid  md:grid-cols-2 mt-5 py-4 border-b border-stone-400 md:border-none ">
             <section className="w-[512px] relative section section--border">
-              <Spline scene="https://prod.spline.design/DCtwHq4kJ8iLdwpo/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/TM0o-NN7ksLfXyZC/scene.splinecode" />
             </section>
 
             <div>
